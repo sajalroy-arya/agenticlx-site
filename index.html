@@ -1,2243 +1,2432 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover" />
+    <title>Agentic LX â€” AI Reception for WhatsApp Businesses</title>
+    <meta name="description"
+        content="Agentic LX answers, qualifies, and converts every WhatsApp lead 24/7. Up and running in 48 hours." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Agentic LX â€” AI Reception for WhatsApp Businesses" />
+    <meta property="og:description"
+        content="Your business never sleeps. Neither does your AI. Agentic LX converts every WhatsApp lead, 24/7." />
+    <meta name="theme-color" content="#06060E" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>âš¡</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
 
-<!-- ═══ PRIMARY META ═══ -->
-<title>Agentic LX — AI Reception for WhatsApp Businesses</title>
-<meta name="description" content="Agentic LX is the AI Reception System that answers, qualifies, and converts every WhatsApp lead — 24/7, without a single human agent. Up and running in 48 hours." />
-<meta name="author" content="Agentic LX" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://YOUR-DOMAIN.COM/" />
+        :root {
+            --bg: #06060E;
+            --bg2: #0D0D1A;
+            --bg3: #11111F;
+            --ink: #F8F7F4;
+            --ink2: #A8A6B2;
+            --ink3: #5C5A6B;
+            --indigo: #6366F1;
+            --indigo-d: #4F51D9;
+            --indigo-glow: rgba(99, 102, 241, 0.18);
+            --green: #10B981;
+            --green-glow: rgba(16, 185, 129, 0.18);
+            --rule: rgba(255, 255, 255, 0.07);
+            --ff-head: 'Syne', system-ui, sans-serif;
+            --ff-body: 'Inter', system-ui, sans-serif;
+            --pad: clamp(20px, 5vw, 64px);
+            --section: clamp(72px, 10vw, 128px);
+            --r: 10px;
+        }
 
-<!-- ═══ OPEN GRAPH (Facebook, WhatsApp, LinkedIn previews) ═══ -->
-<meta property="og:type"        content="website" />
-<meta property="og:url"         content="https://YOUR-DOMAIN.COM/" />
-<meta property="og:title"       content="Agentic LX — AI Reception for WhatsApp Businesses" />
-<meta property="og:description" content="Your business never sleeps. Neither does your AI. Agentic LX answers every WhatsApp message, qualifies leads &amp; books appointments 24/7." />
-<meta property="og:image"       content="https://YOUR-DOMAIN.COM/og-image.png" />
-<meta property="og:image:width"  content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:site_name"   content="Agentic LX" />
-<meta property="og:locale"      content="en_US" />
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%
+        }
 
-<!-- ═══ TWITTER / X CARD ═══ -->
-<meta name="twitter:card"        content="summary_large_image" />
-<meta name="twitter:site"        content="@agenticlx" />
-<meta name="twitter:title"       content="Agentic LX — AI Reception for WhatsApp Businesses" />
-<meta name="twitter:description" content="Your business never sleeps. Neither does your AI. Fully automated WhatsApp lead capture, qualification &amp; booking." />
-<meta name="twitter:image"       content="https://YOUR-DOMAIN.COM/og-image.png" />
+        body {
+            background: var(--bg);
+            color: var(--ink);
+            font-family: var(--ff-body);
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-x: hidden;
+            cursor: none;
+        }
 
-<!-- ═══ THEME / PWA ═══ -->
-<meta name="theme-color" content="#0A0A0F" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        /* ---- GRAIN ---- */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 9000;
+            pointer-events: none;
+            opacity: .022;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            background-size: 180px;
+        }
 
-<!-- ═══ SVG EMOJI FAVICON (⚡) — no external file needed ═══ -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+        /* ---- CURSOR ---- */
+        #cdot,
+        #cring {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            border-radius: 50%;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width .2s, height .2s, opacity .2s
+        }
 
-<!-- ═══ FONTS ═══ -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
-<style>
-  /* ===================== RESET & BASE ===================== */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --obsidian: #0A0A0F;
-    --obsidian-2: #111118;
-    --obsidian-3: #16161f;
-    --gold: #F5A623;
-    --gold-dim: #c9851a;
-    --gold-glow: rgba(245,166,35,0.18);
-    --violet: #7B2FFF;
-    --violet-dim: #5a1fd6;
-    --violet-glow: rgba(123,47,255,0.18);
-    --white: #F0EEF8;
-    --muted: #8887a0;
-    --glass: rgba(255,255,255,0.03);
-    --glass-border: rgba(255,255,255,0.07);
-    --font-serif: 'Instrument Serif', Georgia, serif;
-    --font-sans: 'DM Sans', system-ui, sans-serif;
-    --radius-sm: 12px;
-    --radius-md: 20px;
-    --radius-lg: 28px;
-    --radius-xl: 40px;
-    --section-pad: clamp(80px, 10vw, 140px);
-  }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--obsidian);
-    color: var(--white);
-    font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.6;
-    overflow-x: hidden;
-    cursor: none;
-  }
+        #cdot {
+            width: 8px;
+            height: 8px;
+            background: var(--indigo);
+            box-shadow: 0 0 10px 3px var(--indigo-glow);
+            transition: transform .05s, width .2s, height .2s
+        }
 
-  /* ===================== CUSTOM CURSOR ===================== */
-  #cursor-dot {
-    position: fixed;
-    top: 0; left: 0;
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: var(--gold);
-    box-shadow: 0 0 12px 4px rgba(245,166,35,0.7);
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: transform 0.05s ease, opacity 0.2s ease;
-  }
-  #cursor-ring {
-    position: fixed;
-    top: 0; left: 0;
-    width: 36px; height: 36px;
-    border-radius: 50%;
-    border: 1.5px solid rgba(245,166,35,0.4);
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%, -50%);
-    transition: transform 0.18s cubic-bezier(0.17,0.67,0.35,1), width 0.2s, height 0.2s, opacity 0.2s;
-  }
-  body:hover #cursor-dot { opacity: 1; }
+        #cring {
+            width: 32px;
+            height: 32px;
+            border: 1.5px solid rgba(99, 102, 241, .35);
+            transition: transform .16s cubic-bezier(.17, .67, .35, 1), width .2s, height .2s
+        }
 
-  /* ===================== GRAIN OVERLAY ===================== */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.032;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 200px 200px;
-  }
+        /* ---- TYPOGRAPHY ---- */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--ff-head);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -.02em
+        }
 
-  /* ===================== GLOWING ORBS ===================== */
-  .orb-container {
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    overflow: hidden;
-  }
-  .orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.18;
-    animation: orbFloat linear infinite;
-  }
-  .orb-1 {
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, var(--violet) 0%, transparent 70%);
-    top: -20%; left: -10%;
-    animation-duration: 22s;
-    animation-name: orbFloat1;
-  }
-  .orb-2 {
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
-    top: 30%; right: -10%;
-    animation-duration: 28s;
-    animation-name: orbFloat2;
-    opacity: 0.12;
-  }
-  .orb-3 {
-    width: 400px; height: 400px;
-    background: radial-gradient(circle, #2f8fff 0%, transparent 70%);
-    bottom: 10%; left: 20%;
-    animation-duration: 18s;
-    animation-name: orbFloat3;
-    opacity: 0.1;
-  }
-  @keyframes orbFloat1 {
-    0%   { transform: translate(0, 0) scale(1); }
-    33%  { transform: translate(60px, 80px) scale(1.08); }
-    66%  { transform: translate(-40px, 40px) scale(0.95); }
-    100% { transform: translate(0, 0) scale(1); }
-  }
-  @keyframes orbFloat2 {
-    0%   { transform: translate(0, 0) scale(1); }
-    40%  { transform: translate(-80px, -60px) scale(1.1); }
-    70%  { transform: translate(50px, 30px) scale(0.92); }
-    100% { transform: translate(0, 0) scale(1); }
-  }
-  @keyframes orbFloat3 {
-    0%   { transform: translate(0, 0) scale(1); }
-    50%  { transform: translate(70px, -50px) scale(1.06); }
-    100% { transform: translate(0, 0) scale(1); }
-  }
+        h1 {
+            font-size: clamp(2.6rem, 6.5vw, 5.5rem)
+        }
 
-  /* ===================== TYPOGRAPHY ===================== */
-  h1, h2, h3 { font-family: var(--font-serif); font-weight: 400; line-height: 1.12; }
-  h1 { font-size: clamp(3rem, 7vw, 6.5rem); }
-  h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
-  h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
-  p { font-family: var(--font-sans); color: var(--muted); font-size: clamp(0.95rem, 1.5vw, 1.1rem); }
-  .gold { color: var(--gold); }
-  .violet { color: var(--violet); }
-  .white { color: var(--white); }
+        h2 {
+            font-size: clamp(2rem, 4vw, 3.2rem)
+        }
 
-  /* ===================== GOLD RULE ===================== */
-  .gold-rule {
-    display: block;
-    width: 80px; height: 2px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    margin: 0 auto 1.5rem;
-    border-radius: 2px;
-  }
-  .gold-rule.left { margin: 0 0 1.5rem; }
+        h3 {
+            font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+            letter-spacing: -.01em
+        }
 
-  /* ===================== SECTION LABEL ===================== */
-  .section-label {
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1rem;
-    display: block;
-  }
+        p {
+            color: var(--ink2);
+            line-height: 1.7
+        }
 
-  /* ===================== BUTTONS ===================== */
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 14px 32px;
-    border-radius: var(--radius-xl);
-    font-family: var(--font-sans);
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: none;
-    text-decoration: none;
-    transition: all 0.25s ease;
-    border: none;
-    outline: none;
-    position: relative;
-    overflow: hidden;
-  }
-  .btn::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent);
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-  .btn:hover::after { opacity: 1; }
-  .btn-gold {
-    background: linear-gradient(135deg, var(--gold), #e8950f);
-    color: #0A0A0F;
-    box-shadow: 0 0 30px rgba(245,166,35,0.35), 0 4px 20px rgba(0,0,0,0.3);
-  }
-  .btn-gold:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 50px rgba(245,166,35,0.5), 0 8px 30px rgba(0,0,0,0.4);
-  }
-  .btn-outline {
-    background: transparent;
-    color: var(--white);
-    border: 1.5px solid rgba(255,255,255,0.15);
-    backdrop-filter: blur(8px);
-  }
-  .btn-outline:hover {
-    border-color: var(--gold);
-    color: var(--gold);
-    transform: translateY(-2px);
-  }
-  .btn-lg { padding: 18px 44px; font-size: 1.05rem; }
+        a {
+            color: inherit;
+            text-decoration: none
+        }
 
-  /* ===================== GLASS CARD ===================== */
-  .glass-card {
-    background: var(--glass);
-    border: 1px solid var(--glass-border);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-radius: var(--radius-lg);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .glass-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(245,166,35,0.04) 0%, transparent 60%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: inherit;
-    pointer-events: none;
-  }
-  .glass-card:hover {
-    border-color: rgba(245,166,35,0.3);
-    box-shadow: 0 0 40px rgba(245,166,35,0.08), 0 20px 60px rgba(0,0,0,0.4);
-    transform: translateY(-4px);
-  }
-  .glass-card:hover::before { opacity: 1; }
+        /* ---- LAYOUT ---- */
+        .wrap {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 var(--pad);
+            position: relative;
+            z-index: 2
+        }
 
-  /* ===================== LAYOUT HELPERS ===================== */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 clamp(20px, 5vw, 60px);
-    position: relative;
-    z-index: 2;
-  }
-  section { position: relative; z-index: 2; }
+        section {
+            position: relative;
+            z-index: 2
+        }
 
-  /* ===================== SCROLL ANIMATIONS ===================== */
-  .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .reveal-left {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal-left.active {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  .reveal-right {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal-right.active {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  .delay-1 { transition-delay: 0.1s; }
-  .delay-2 { transition-delay: 0.2s; }
-  .delay-3 { transition-delay: 0.3s; }
-  .delay-4 { transition-delay: 0.4s; }
-  .delay-5 { transition-delay: 0.5s; }
+        /* ---- LABEL ---- */
+        .label {
+            font-family: var(--ff-body);
+            font-size: .72rem;
+            font-weight: 600;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--indigo);
+            margin-bottom: .8rem;
+            display: block
+        }
 
-  /* ===================== NAVIGATION ===================== */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-    padding: 20px clamp(20px, 5vw, 60px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    background: rgba(10,10,15,0.6);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    transition: background 0.3s ease;
-  }
-  nav.scrolled {
-    background: rgba(10,10,15,0.88);
-    border-bottom-color: rgba(245,166,35,0.1);
-  }
-  .nav-logo {
-    font-family: var(--font-serif);
-    font-size: 1.4rem;
-    color: var(--white);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .nav-logo-mark {
-    width: 34px; height: 34px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--gold), var(--violet));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #fff;
-    font-family: var(--font-sans);
-  }
-  .nav-links {
-    display: flex;
-    gap: 36px;
-    list-style: none;
-  }
-  .nav-links a {
-    font-family: var(--font-sans);
-    font-size: 0.88rem;
-    font-weight: 500;
-    color: var(--muted);
-    text-decoration: none;
-    transition: color 0.2s;
-    letter-spacing: 0.02em;
-  }
-  .nav-links a:hover { color: var(--white); }
-  .nav-cta { display: flex; gap: 12px; align-items: center; }
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: none;
-    background: none;
-    border: none;
-    padding: 4px;
-  }
-  .hamburger span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--white);
-    border-radius: 2px;
-    transition: all 0.3s;
-  }
+        /* ---- BUTTONS ---- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: 13px 28px;
+            border-radius: 100px;
+            font-family: var(--ff-body);
+            font-size: .92rem;
+            font-weight: 600;
+            cursor: none;
+            text-decoration: none;
+            transition: all .22s ease;
+            border: none;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap
+        }
 
-  /* ===================== HERO SECTION ===================== */
-  #hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 140px clamp(20px,5vw,60px) 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 60px;
-  }
-  .hero-content {
-    flex: 1;
-    min-width: 0;
-    position: relative;
-    z-index: 2;
-  }
-  .hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(245,166,35,0.08);
-    border: 1px solid rgba(245,166,35,0.2);
-    border-radius: 100px;
-    padding: 6px 16px 6px 10px;
-    margin-bottom: 2rem;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .hero-eyebrow .dot {
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: var(--gold);
-    animation: pulse 2s ease infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50%       { opacity: 0.5; transform: scale(0.7); }
-  }
-  .hero-headline {
-    margin-bottom: 1.6rem;
-    letter-spacing: -0.02em;
-  }
-  .hero-headline .ai-word {
-    display: inline-block;
-    color: var(--gold);
-    font-size: 1.18em;
-    position: relative;
-  }
-  .hero-headline .ai-word::after {
-    content: '';
-    position: absolute;
-    bottom: -4px; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    border-radius: 2px;
-  }
-  .hero-sub {
-    font-size: clamp(1rem, 1.6vw, 1.15rem);
-    color: var(--muted);
-    max-width: 480px;
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
-  }
-  .hero-actions {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-  }
-  .hero-trust {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    font-size: 0.8rem;
-    color: var(--muted);
-  }
-  .hero-trust-avatars {
-    display: flex;
-  }
-  .hero-trust-avatar {
-    width: 32px; height: 32px;
-    border-radius: 50%;
-    border: 2px solid var(--obsidian);
-    margin-left: -8px;
-    background: linear-gradient(135deg, var(--violet), var(--gold));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.65rem;
-    font-weight: 700;
-    color: #fff;
-  }
-  .hero-trust-avatar:first-child { margin-left: 0; }
-  .hero-right {
-    flex: 0 0 360px;
-    position: relative;
-    z-index: 2;
-  }
+        .btn-primary {
+            background: var(--indigo);
+            color: #fff;
+            box-shadow: 0 0 28px var(--indigo-glow), 0 4px 16px rgba(0, 0, 0, .3)
+        }
 
-  /* ======= PHONE FRAME + WHATSAPP MOCKUP ======= */
-  .phone-wrap {
-    position: relative;
-    display: inline-block;
-    animation: phoneFloat 4s ease-in-out infinite;
-    filter: drop-shadow(0 40px 60px rgba(0,0,0,0.65)) drop-shadow(0 0 60px rgba(123,47,255,0.2));
-    transform-origin: center bottom;
-  }
-  .phone-wrap:hover { animation-play-state: paused; }
-  @keyframes phoneFloat {
-    0%,100% { transform: translateY(0) rotate(-1.5deg); }
-    50%      { transform: translateY(-14px) rotate(-1.5deg); }
-  }
+        .btn-primary:hover {
+            background: var(--indigo-d);
+            transform: translateY(-2px);
+            box-shadow: 0 0 44px rgba(99, 102, 241, .35), 0 8px 24px rgba(0, 0, 0, .4)
+        }
 
-  /* Outer phone shell */
-  .phone-shell {
-    width: 300px;
-    background: #1a1a22;
-    border-radius: 44px;
-    border: 2px solid rgba(255,255,255,0.1);
-    overflow: hidden;
-    position: relative;
-    box-shadow:
-      inset 0 0 0 1px rgba(255,255,255,0.04),
-      0 0 0 6px #111116,
-      0 0 0 8px rgba(255,255,255,0.06);
-  }
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, .22) 50%, transparent 70%);
+            pointer-events: none
+        }
 
-  /* Phone top notch bar */
-  .phone-notch {
-    background: #0f0f15;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  .phone-notch-pill {
-    width: 80px; height: 18px;
-    background: #0a0a0f;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-  }
-  .phone-notch-camera {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: #1e1e2e;
-    border: 1.5px solid #2a2a3a;
-  }
-  .phone-notch-speaker {
-    width: 32px; height: 4px;
-    border-radius: 100px;
-    background: #1e1e2e;
-  }
+        .btn-primary:hover::before {
+            left: 160%;
+            transition: left .5s ease
+        }
 
-  /* WhatsApp header */
-  .wa-header {
-    background: #075E54;
-    padding: 10px 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .wa-back-arrow {
-    color: rgba(255,255,255,0.7);
-    font-size: 1rem;
-    margin-right: 2px;
-    flex-shrink: 0;
-  }
-  .wa-avatar {
-    width: 34px; height: 34px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #25D366, #128C7E);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
-    flex-shrink: 0;
-  }
-  .wa-header-info { flex: 1; min-width: 0; }
-  .wa-contact-name {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #fff;
-    font-family: var(--font-sans);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .wa-contact-status {
-    font-size: 0.66rem;
-    color: rgba(255,255,255,0.7);
-    font-family: var(--font-sans);
-  }
-  .wa-header-icons {
-    display: flex;
-    gap: 14px;
-    color: rgba(255,255,255,0.75);
-    font-size: 0.85rem;
-  }
+        .btn-ghost {
+            background: transparent;
+            color: var(--ink);
+            border: 1.5px solid var(--rule)
+        }
 
-  /* Chat body — WhatsApp wallpaper */
-  .wa-body {
-    padding: 12px 10px;
-    background: #0c1a14;
-    background-image:
-      radial-gradient(ellipse at 20% 30%, rgba(37,211,102,0.04) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 70%, rgba(7,94,84,0.06) 0%, transparent 50%);
-    min-height: 340px;
-    max-height: 340px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    position: relative;
-  }
+        .btn-ghost:hover {
+            border-color: rgba(99, 102, 241, .45);
+            color: var(--indigo);
+            transform: translateY(-2px)
+        }
 
-  /* Date chip */
-  .wa-date-chip {
-    align-self: center;
-    background: rgba(17,27,17,0.85);
-    border: 1px solid rgba(255,255,255,0.07);
-    color: rgba(255,255,255,0.55);
-    font-family: var(--font-sans);
-    font-size: 0.62rem;
-    padding: 3px 10px;
-    border-radius: 100px;
-    margin-bottom: 4px;
-  }
+        .btn-green {
+            background: var(--green);
+            color: #fff;
+            box-shadow: 0 0 24px var(--green-glow)
+        }
 
-  /* Bubbles */
-  .wa-bubble {
-    max-width: 85%;
-    padding: 7px 10px 5px;
-    border-radius: 14px;
-    font-size: 0.77rem;
-    font-family: var(--font-sans);
-    line-height: 1.45;
-    opacity: 0;
-    transform: translateY(6px) scale(0.97);
-    transition: opacity 0.35s ease, transform 0.35s ease;
-    position: relative;
-  }
-  .wa-bubble.show {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  .wa-bubble.incoming {
-    background: #1f2c23;
-    color: #e2f0e4;
-    border-bottom-left-radius: 4px;
-    align-self: flex-start;
-  }
-  .wa-bubble.incoming::before {
-    content: '';
-    position: absolute;
-    left: -6px; bottom: 0;
-    border-width: 0 0 8px 7px;
-    border-style: solid;
-    border-color: transparent transparent #1f2c23 transparent;
-  }
-  .wa-bubble.outgoing {
-    background: #005c4b;
-    color: #e2f5ec;
-    border-bottom-right-radius: 4px;
-    align-self: flex-end;
-  }
-  .wa-bubble.outgoing::after {
-    content: '';
-    position: absolute;
-    right: -6px; bottom: 0;
-    border-width: 0 7px 8px 0;
-    border-style: solid;
-    border-color: transparent #005c4b transparent transparent;
-  }
-  .wa-time {
-    font-size: 0.6rem;
-    opacity: 0.55;
-    margin-top: 2px;
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 3px;
-  }
-  .wa-tick { color: #53bdeb; font-size: 0.7rem; }
+        .btn-green:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.08)
+        }
 
-  /* Typing indicator */
-  .wa-typing {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    padding: 9px 12px;
-    background: #1f2c23;
-    border-radius: 14px;
-    border-bottom-left-radius: 4px;
-    align-self: flex-start;
-    max-width: 56px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    position: relative;
-  }
-  .wa-typing::before {
-    content: '';
-    position: absolute;
-    left: -6px; bottom: 0;
-    border-width: 0 0 8px 7px;
-    border-style: solid;
-    border-color: transparent transparent #1f2c23 transparent;
-  }
-  .wa-typing.show { opacity: 1; }
-  .wa-typing span {
-    width: 5px; height: 5px;
-    border-radius: 50%;
-    background: rgba(226,240,228,0.5);
-    animation: typingDot 1.2s ease infinite;
-  }
-  .wa-typing span:nth-child(2) { animation-delay: 0.2s; }
-  .wa-typing span:nth-child(3) { animation-delay: 0.4s; }
-  @keyframes typingDot {
-    0%,80%,100% { transform: scale(1); opacity: 0.35; }
-    40%         { transform: scale(1.4); opacity: 1; }
-  }
+        .btn-lg {
+            padding: 16px 38px;
+            font-size: 1rem
+        }
 
-  /* WhatsApp input bar */
-  .wa-input-bar {
-    background: #1a2620;
-    padding: 8px 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .wa-input-field {
-    flex: 1;
-    background: #2a3a30;
-    border-radius: 100px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    padding: 0 12px;
-    color: rgba(226,240,228,0.35);
-    font-family: var(--font-sans);
-    font-size: 0.7rem;
-  }
-  .wa-input-btn {
-    width: 32px; height: 32px;
-    border-radius: 50%;
-    background: #25D366;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
-    flex-shrink: 0;
-  }
+        /* ---- DIVIDER LINE ---- */
+        .rule {
+            display: block;
+            width: 48px;
+            height: 2px;
+            background: var(--indigo);
+            border-radius: 2px;
+            margin-bottom: 1.2rem
+        }
 
-  /* Bottom home bar */
-  .phone-home-bar {
-    height: 24px;
-    background: #0f0f15;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .phone-home-bar-pill {
-    width: 80px; height: 4px;
-    border-radius: 100px;
-    background: rgba(255,255,255,0.18);
-  }
+        /* ---- REVEAL ---- */
+        .rv {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .65s ease, transform .65s ease
+        }
 
-  /* Badge pill */
-  .wa-badge {
-    position: absolute;
-    top: -16px; right: -10px;
-    background: linear-gradient(135deg, var(--gold), #e8950f);
-    color: #0A0A0F;
-    font-size: 0.68rem;
-    font-weight: 700;
-    padding: 5px 12px;
-    border-radius: 100px;
-    font-family: var(--font-sans);
-    white-space: nowrap;
-    box-shadow: 0 0 20px rgba(245,166,35,0.45);
-    animation: badgePop 3s ease-in-out infinite;
-    z-index: 10;
-  }
-  @keyframes badgePop {
-    0%,100% { transform: scale(1) rotate(2deg); }
-    50%     { transform: scale(1.07) rotate(2deg); }
-  }
+        .rv.on {
+            opacity: 1;
+            transform: none
+        }
 
-  /* ===================== DIAGONAL BREAK ===================== */
-  .clip-top {
-    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
-    margin-top: -5vw;
-    padding-top: 10vw;
-  }
-  .clip-bottom {
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-    padding-bottom: 10vw;
-  }
-  .clip-both {
-    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
-    margin-top: -4vw;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-  }
+        .dl1 {
+            transition-delay: .1s
+        }
 
-  /* ===================== SECTION — PROBLEM ===================== */
-  #problem {
-    background: var(--obsidian-2);
-    padding: var(--section-pad) clamp(20px,5vw,60px);
-  }
-  #problem .inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  #problem .section-header {
-    text-align: center;
-    margin-bottom: 70px;
-  }
-  #problem .section-header h2 {
-    max-width: 600px;
-    margin: 0 auto 1rem;
-  }
-  .pain-flow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2px;
-    position: relative;
-  }
-  .pain-flow::before {
-    content: '';
-    position: absolute;
-    top: 60px;
-    left: calc(12.5% + 30px);
-    right: calc(12.5% + 30px);
-    height: 2px;
-    background: linear-gradient(90deg, var(--gold), var(--violet), var(--gold));
-    opacity: 0.25;
-    z-index: 0;
-  }
-  .pain-step {
-    padding: 36px 28px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  .pain-step-num {
-    width: 52px; height: 52px;
-    border-radius: 50%;
-    border: 2px solid rgba(245,166,35,0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-serif);
-    font-size: 1.4rem;
-    color: var(--gold);
-    margin: 0 auto 1.2rem;
-    background: rgba(245,166,35,0.05);
-    position: relative;
-  }
-  .pain-step-num::after {
-    content: '';
-    position: absolute;
-    inset: -6px;
-    border-radius: 50%;
-    border: 1px solid rgba(245,166,35,0.08);
-  }
-  .pain-step-icon {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-  }
-  .pain-step h3 {
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--white);
-    margin-bottom: 0.6rem;
-    line-height: 1.4;
-  }
-  .pain-step p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-  }
-  .pain-step.fatal .pain-step-num {
-    border-color: rgba(255,60,60,0.3);
-    color: #ff6060;
-    background: rgba(255,60,60,0.05);
-  }
+        .dl2 {
+            transition-delay: .18s
+        }
 
-  /* ===================== RESPONSIVE — NAV ===================== */
-  @media (max-width: 900px) {
-    .nav-links { display: none; }
-    .nav-cta .btn-outline { display: none; }
-    .hamburger { display: flex; }
-  }
-  @media (max-width: 768px) {
-    #hero {
-      flex-direction: column;
-      padding-top: 110px;
-      padding-bottom: 60px;
-      gap: 50px;
-    }
-    .hero-right { flex: none; width: 100%; max-width: 380px; margin: 0 auto; }
-    .pain-flow::before { display: none; }
-  }
+        .dl3 {
+            transition-delay: .26s
+        }
 
-  /* ===================== ANNOUNCEMENT BAR ===================== */
-  #announce-bar {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1001;
-    background: linear-gradient(90deg, #7B2FFF 0%, #0A0A0F 40%, #0A0A0F 60%, #c9851a 100%);
-    border-bottom: 1px solid rgba(245,166,35,0.2);
-    text-align: center;
-    padding: 8px 20px;
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: rgba(240,238,248,0.85);
-    letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-  }
-  #announce-bar strong { color: var(--gold); }
-  #announce-bar .ab-close {
-    position: absolute; right: 16px;
-    background: none; border: none;
-    color: var(--muted); font-size: 1rem;
-    cursor: none; line-height: 1;
-    transition: color 0.2s;
-  }
-  #announce-bar .ab-close:hover { color: var(--white); }
-  body.bar-visible nav { top: 36px; }
+        .dl4 {
+            transition-delay: .34s
+        }
 
-  /* ===================== BTN SHIMMER ===================== */
-  .btn-gold {
-    overflow: hidden;
-  }
-  .btn-gold::before {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.28) 50%, transparent 70%);
-    transition: left 0s;
-    pointer-events: none;
-  }
-  .btn-gold:hover::before {
-    left: 160%;
-    transition: left 0.55s ease;
-  }
+        .dl5 {
+            transition-delay: .42s
+        }
 
-  /* ===================== NAV UNDERLINE HOVER ===================== */
-  .nav-links a {
-    position: relative;
-  }
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -3px; left: 0;
-    width: 0; height: 1.5px;
-    background: var(--gold);
-    border-radius: 2px;
-    transition: width 0.25s ease;
-  }
-  .nav-links a:hover::after { width: 100%; }
-  .nav-links a:hover { color: var(--white); }
+        /* ---- NAV ---- */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px var(--pad);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            background: rgba(6, 6, 14, .55);
+            border-bottom: 1px solid var(--rule);
+            transition: background .3s, border-color .3s;
+        }
 
-  /* ===================== LOGO STRIP ===================== */
-  #logo-strip {
-    position: relative;
-    z-index: 2;
-    padding: 28px clamp(20px,5vw,60px);
-    border-top: 1px solid rgba(255,255,255,0.04);
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    background: rgba(255,255,255,0.015);
-  }
-  .logo-strip-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .logo-strip-label {
-    font-family: var(--font-sans);
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    white-space: nowrap;
-    opacity: 0.7;
-  }
-  .logo-strip-divider {
-    width: 1px; height: 22px;
-    background: rgba(255,255,255,0.08);
-    flex-shrink: 0;
-  }
-  .logo-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 7px 14px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.07);
-    background: rgba(255,255,255,0.02);
-    font-family: var(--font-sans);
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgba(240,238,248,0.55);
-    transition: border-color 0.2s, color 0.2s;
-  }
-  .logo-badge:hover { border-color: rgba(245,166,35,0.25); color: var(--white); }
-  .logo-badge .lb-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
+        nav.sc {
+            background: rgba(6, 6, 14, .88);
+            border-color: rgba(99, 102, 241, .12)
+        }
 
-  /* ===================== STATS BAR ===================== */
-  #stats-bar {
-    position: relative;
-    z-index: 2;
-    background: linear-gradient(135deg, rgba(123,47,255,0.04), rgba(245,166,35,0.04));
-    border-top: 1px solid rgba(245,166,35,0.08);
-    border-bottom: 1px solid rgba(245,166,35,0.08);
-    padding: 40px clamp(20px,5vw,60px);
-  }
-  .stats-bar-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: rgba(255,255,255,0.04);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-  }
-  .stat-item {
-    background: var(--obsidian);
-    padding: 36px 24px;
-    text-align: center;
-    position: relative;
-  }
-  .stat-item::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 50% 0%, rgba(245,166,35,0.05), transparent 70%);
-    pointer-events: none;
-  }
-  .stat-value {
-    font-family: var(--font-serif);
-    font-size: clamp(2rem, 4vw, 3rem);
-    color: var(--gold);
-    line-height: 1;
-    margin-bottom: 8px;
-    display: block;
-  }
-  .stat-label {
-    font-family: var(--font-sans);
-    font-size: 0.82rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-  .stat-arrow {
-    display: inline-block;
-    color: rgba(245,166,35,0.4);
-    margin: 0 6px;
-    font-size: 0.9rem;
-  }
-  @media (max-width: 640px) {
-    .stats-bar-inner { grid-template-columns: 1fr; }
-  }
+        .n-logo {
+            font-family: var(--ff-head);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--ink);
+            display: flex;
+            align-items: center;
+            gap: 9px
+        }
 
-  /* ===================== GLASS CARD ENHANCED HOVER ===================== */
-  .glass-card:hover {
-    border-color: rgba(245,166,35,0.35) !important;
-    box-shadow: 0 0 0 1px rgba(245,166,35,0.1), 0 0 50px rgba(245,166,35,0.12), 0 24px 60px rgba(0,0,0,0.45) !important;
-    transform: translateY(-8px) !important;
-  }
+        .n-logo-mark {
+            width: 32px;
+            height: 32px;
+            border-radius: 9px;
+            background: var(--indigo);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .8rem;
+            color: #fff;
+            font-family: var(--ff-body);
+            font-weight: 700;
+            flex-shrink: 0
+        }
 
-  /* ===================== PRICING BADGE ROTATION ===================== */
-  .pricing-badge {
-    animation: badgeRotate 6s ease-in-out infinite !important;
-  }
-  @keyframes badgeRotate {
-    0%,100% { transform: translateX(-50%) rotate(-2deg) scale(1); }
-    50%      { transform: translateX(-50%) rotate(2deg) scale(1.05); }
-  }
+        .n-links {
+            display: flex;
+            gap: 32px;
+            list-style: none
+        }
 
-  /* ===================== STICKY MOBILE BAR ===================== */
-  #mobile-sticky {
-    display: none;
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    z-index: 999;
-    background: rgba(10,10,15,0.96);
-    border-top: 1px solid rgba(245,166,35,0.2);
-    backdrop-filter: blur(20px);
-    padding: 12px 20px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-  #mobile-sticky p {
-    font-size: 0.88rem;
-    color: var(--white);
-    font-family: var(--font-sans);
-    margin: 0;
-  }
-  #mobile-sticky p span { color: var(--gold); font-weight: 600; }
-  .mob-wa-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #25D366;
-    color: #fff;
-    font-family: var(--font-sans);
-    font-size: 0.85rem;
-    font-weight: 700;
-    padding: 10px 18px;
-    border-radius: 100px;
-    text-decoration: none;
-    white-space: nowrap;
-    flex-shrink: 0;
-    box-shadow: 0 0 20px rgba(37,211,102,0.3);
-  }
-  @media (max-width: 768px) {
-    #mobile-sticky { display: flex; }
-    body { padding-bottom: 72px; }
-  }
+        .n-links a {
+            font-size: .85rem;
+            font-weight: 500;
+            color: var(--ink2);
+            transition: color .2s;
+            position: relative
+        }
 
-  /* ===================== EXIT BUBBLE ===================== */
-  #exit-bubble {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    z-index: 998;
-    background: var(--obsidian-3);
-    border: 1px solid rgba(245,166,35,0.25);
-    border-radius: 20px 20px 4px 20px;
-    padding: 14px 18px 14px 14px;
-    max-width: 210px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 30px rgba(245,166,35,0.08);
-    cursor: none;
-    animation: bubbleIn 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards;
-    display: none;
-  }
-  #exit-bubble.visible { display: block; }
-  @keyframes bubbleIn {
-    from { opacity:0; transform: scale(0.8) translateY(10px); }
-    to   { opacity:1; transform: scale(1) translateY(0); }
-  }
-  .eb-close {
-    position: absolute; top: 6px; right: 8px;
-    background: none; border: none;
-    color: var(--muted); font-size: 0.8rem;
-    cursor: none; line-height: 1;
-  }
-  .eb-text {
-    font-family: var(--font-sans);
-    font-size: 0.82rem;
-    color: var(--white);
-    line-height: 1.5;
-    padding-right: 12px;
-  }
-  .eb-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--gold);
-    font-size: 0.78rem;
-    font-weight: 700;
-    font-family: var(--font-sans);
-    text-decoration: none;
-    letter-spacing: 0.04em;
-  }
-  .eb-link:hover { text-decoration: underline; }
-</style>
+        .n-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1.5px;
+            background: var(--indigo);
+            border-radius: 2px;
+            transition: width .22s
+        }
+
+        .n-links a:hover {
+            color: var(--ink)
+        }
+
+        .n-links a:hover::after {
+            width: 100%
+        }
+
+        .n-cta {
+            display: flex;
+            gap: 10px;
+            align-items: center
+        }
+
+        .hbg {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: none;
+            background: none;
+            border: none;
+            padding: 4px
+        }
+
+        .hbg span {
+            display: block;
+            width: 22px;
+            height: 1.5px;
+            background: var(--ink);
+            border-radius: 2px;
+            transition: all .3s
+        }
+
+        @media(max-width:860px) {
+            .n-links {
+                display: none
+            }
+
+            .n-cta .btn-ghost {
+                display: none
+            }
+
+            .hbg {
+                display: flex
+            }
+        }
+
+        /* ---- HERO ---- */
+        #hero {
+            min-height: 100svh;
+            display: flex;
+            align-items: center;
+            padding: clamp(110px, 14vw, 160px) var(--pad) clamp(60px, 8vw, 100px);
+            max-width: 1160px;
+            margin: 0 auto;
+            gap: 60px;
+        }
+
+        .h-content {
+            flex: 1;
+            min-width: 0
+        }
+
+        .h-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(99, 102, 241, .09);
+            border: 1px solid rgba(99, 102, 241, .22);
+            border-radius: 100px;
+            padding: 5px 14px 5px 9px;
+            margin-bottom: 1.8rem;
+            font-size: .75rem;
+            font-weight: 600;
+            color: var(--indigo);
+            letter-spacing: .07em;
+            text-transform: uppercase;
+        }
+
+        .h-eyebrow .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--green);
+            animation: pulse 2s ease infinite
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            50% {
+                opacity: .4;
+                transform: scale(.7)
+            }
+        }
+
+        .h-head {
+            margin-bottom: 1.4rem
+        }
+
+        .h-head em {
+            font-style: normal;
+            color: var(--indigo)
+        }
+
+        .h-sub {
+            font-size: clamp(.95rem, 1.5vw, 1.1rem);
+            max-width: 460px;
+            margin-bottom: 2.2rem;
+            color: var(--ink2)
+        }
+
+        .h-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 2.6rem
+        }
+
+        .h-trust {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: .78rem;
+            color: var(--ink2)
+        }
+
+        .h-avs {
+            display: flex
+        }
+
+        .h-av {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid var(--bg);
+            margin-left: -7px;
+            background: linear-gradient(135deg, var(--indigo), var(--green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .6rem;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .h-av:first-child {
+            margin-left: 0
+        }
+
+        .h-right {
+            flex: 0 0 320px;
+            position: relative;
+            z-index: 2
+        }
+
+        @media(max-width:800px) {
+            #hero {
+                flex-direction: column;
+                padding-top: 110px;
+                gap: 44px
+            }
+
+            .h-right {
+                flex: none;
+                width: 100%;
+                max-width: 340px;
+                margin: 0 auto
+            }
+        }
+
+        /* ---- PHONE ---- */
+        .ph-wrap {
+            position: relative;
+            display: inline-block;
+            animation: float 4.5s ease-in-out infinite;
+            filter: drop-shadow(0 32px 56px rgba(0, 0, 0, .7)) drop-shadow(0 0 50px rgba(99, 102, 241, .15));
+            transform-origin: center bottom
+        }
+
+        .ph-wrap:hover {
+            animation-play-state: paused
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-1.5deg)
+            }
+
+            50% {
+                transform: translateY(-12px) rotate(-1.5deg)
+            }
+        }
+
+        .ph-shell {
+            width: 280px;
+            background: #14141F;
+            border-radius: 40px;
+            border: 2px solid rgba(255, 255, 255, .1);
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04), 0 0 0 5px #0D0D1A, 0 0 0 7px rgba(255, 255, 255, .05)
+        }
+
+        .ph-notch {
+            background: #0D0D1A;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .ph-pill {
+            width: 72px;
+            height: 16px;
+            background: #09090F;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px
+        }
+
+        .ph-cam {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #1A1A28;
+            border: 1.5px solid #24243A
+        }
+
+        .ph-spk {
+            width: 28px;
+            height: 3px;
+            border-radius: 100px;
+            background: #1A1A28
+        }
+
+        .wa-hd {
+            background: #075E54;
+            padding: 9px 12px;
+            display: flex;
+            align-items: center;
+            gap: 9px
+        }
+
+        .wa-av {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .85rem;
+            flex-shrink: 0
+        }
+
+        .wa-ni {
+            flex: 1;
+            min-width: 0
+        }
+
+        .wa-nm {
+            font-size: .78rem;
+            font-weight: 700;
+            color: #fff;
+            font-family: var(--ff-body)
+        }
+
+        .wa-st {
+            font-size: .63rem;
+            color: rgba(255, 255, 255, .7);
+            font-family: var(--ff-body)
+        }
+
+        .wa-body {
+            padding: 10px 9px;
+            background: #0C1A14;
+            min-height: 300px;
+            max-height: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 5px
+        }
+
+        .wa-chip {
+            align-self: center;
+            background: rgba(17, 27, 17, .9);
+            border: 1px solid rgba(255, 255, 255, .06);
+            color: rgba(255, 255, 255, .5);
+            font-family: var(--ff-body);
+            font-size: .58rem;
+            padding: 2px 9px;
+            border-radius: 100px;
+            margin-bottom: 3px
+        }
+
+        .bbl {
+            max-width: 85%;
+            padding: 6px 9px 4px;
+            border-radius: 12px;
+            font-size: .73rem;
+            font-family: var(--ff-body);
+            line-height: 1.4;
+            opacity: 0;
+            transform: translateY(6px) scale(.97);
+            transition: opacity .3s ease, transform .3s ease;
+            position: relative
+        }
+
+        .bbl.show {
+            opacity: 1;
+            transform: none
+        }
+
+        .bbl.in {
+            background: #1F2C23;
+            color: #E2F0E4;
+            border-bottom-left-radius: 3px;
+            align-self: flex-start
+        }
+
+        .bbl.in::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            bottom: 0;
+            border-width: 0 0 7px 6px;
+            border-style: solid;
+            border-color: transparent transparent #1F2C23 transparent
+        }
+
+        .bbl.out {
+            background: #005C4B;
+            color: #E2F5EC;
+            border-bottom-right-radius: 3px;
+            align-self: flex-end
+        }
+
+        .bbl.out::after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            bottom: 0;
+            border-width: 0 6px 7px 0;
+            border-style: solid;
+            border-color: transparent #005C4B transparent transparent
+        }
+
+        .bbl-t {
+            font-size: .57rem;
+            opacity: .5;
+            margin-top: 1px;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2px
+        }
+
+        .wa-typing {
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            padding: 8px 10px;
+            background: #1F2C23;
+            border-radius: 12px;
+            border-bottom-left-radius: 3px;
+            align-self: flex-start;
+            max-width: 50px;
+            opacity: 0;
+            transition: opacity .3s;
+            position: relative
+        }
+
+        .wa-typing::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            bottom: 0;
+            border-width: 0 0 7px 6px;
+            border-style: solid;
+            border-color: transparent transparent #1F2C23 transparent
+        }
+
+        .wa-typing.show {
+            opacity: 1
+        }
+
+        .wa-typing span {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: rgba(226, 240, 228, .5);
+            animation: tdot 1.2s ease infinite
+        }
+
+        .wa-typing span:nth-child(2) {
+            animation-delay: .2s
+        }
+
+        .wa-typing span:nth-child(3) {
+            animation-delay: .4s
+        }
+
+        @keyframes tdot {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(1);
+                opacity: .35
+            }
+
+            40% {
+                transform: scale(1.5);
+                opacity: 1
+            }
+        }
+
+        .wa-bar {
+            background: #1A2620;
+            padding: 7px 9px;
+            display: flex;
+            align-items: center;
+            gap: 7px
+        }
+
+        .wa-input {
+            flex: 1;
+            background: #2A3A30;
+            border-radius: 100px;
+            height: 28px;
+            padding: 0 10px;
+            color: rgba(226, 240, 228, .35);
+            font-family: var(--ff-body);
+            font-size: .65rem;
+            display: flex;
+            align-items: center
+        }
+
+        .wa-send {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #25D366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .75rem;
+            flex-shrink: 0
+        }
+
+        .ph-hbar {
+            height: 20px;
+            background: #0D0D1A;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .ph-hpill {
+            width: 70px;
+            height: 3px;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, .15)
+        }
+
+        .wa-badge {
+            position: absolute;
+            top: -14px;
+            right: -8px;
+            background: var(--indigo);
+            color: #fff;
+            font-size: .64rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 100px;
+            font-family: var(--ff-body);
+            white-space: nowrap;
+            box-shadow: 0 0 18px var(--indigo-glow);
+            animation: bpop 3s ease-in-out infinite
+        }
+
+        @keyframes bpop {
+
+            0%,
+            100% {
+                transform: scale(1) rotate(2deg)
+            }
+
+            50% {
+                transform: scale(1.06) rotate(2deg)
+            }
+        }
+
+        /* ---- LOGO STRIP ---- */
+        #logos {
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 22px var(--pad);
+            background: rgba(255, 255, 255, .012)
+        }
+
+        .logos-in {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+
+        .logos-lbl {
+            font-size: .68rem;
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--ink3);
+            white-space: nowrap
+        }
+
+        .logos-div {
+            width: 1px;
+            height: 18px;
+            background: var(--rule);
+            flex-shrink: 0
+        }
+
+        .logo-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--rule);
+            background: rgba(255, 255, 255, .02);
+            font-family: var(--ff-body);
+            font-size: .76rem;
+            font-weight: 500;
+            color: rgba(248, 247, 244, .45);
+            transition: border-color .2s, color .2s
+        }
+
+        .logo-chip:hover {
+            border-color: rgba(99, 102, 241, .25);
+            color: var(--ink)
+        }
+
+        .logo-chip .dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            flex-shrink: 0
+        }
+
+        /* ---- STATS ---- */
+        #stats {
+            background: linear-gradient(135deg, rgba(99, 102, 241, .04), rgba(16, 185, 129, .03));
+            border-bottom: 1px solid var(--rule);
+            padding: 36px var(--pad)
+        }
+
+        .stats-in {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--rule);
+            border-radius: var(--r);
+            overflow: hidden
+        }
+
+        .stat {
+            background: var(--bg);
+            padding: 32px 20px;
+            text-align: center
+        }
+
+        .stat-v {
+            font-family: var(--ff-head);
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            color: var(--indigo);
+            line-height: 1;
+            margin-bottom: 6px;
+            display: block;
+            font-weight: 700
+        }
+
+        .stat-l {
+            font-size: .8rem;
+            color: var(--ink2);
+            line-height: 1.5
+        }
+
+        .stat-l s {
+            color: var(--ink3)
+        }
+
+        @media(max-width:580px) {
+            .stats-in {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ---- PROBLEM ---- */
+        #problem {
+            background: var(--bg2);
+            padding: var(--section) var(--pad)
+        }
+
+        .s-head {
+            text-align: center;
+            margin-bottom: 56px
+        }
+
+        .s-head h2 {
+            max-width: 580px;
+            margin: .6rem auto 0
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1px;
+            background: var(--rule);
+            border-radius: var(--r);
+            overflow: hidden
+        }
+
+        .pain-card {
+            background: var(--bg2);
+            padding: 32px 24px;
+            position: relative
+        }
+
+        .pain-n {
+            font-family: var(--ff-head);
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: rgba(99, 102, 241, .08);
+            display: block;
+            margin-bottom: .5rem;
+            line-height: 1
+        }
+
+        .pain-icon {
+            font-size: 1.4rem;
+            margin-bottom: .8rem;
+            display: block
+        }
+
+        .pain-card h3 {
+            font-size: .95rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: .5rem;
+            letter-spacing: -.01em;
+            font-family: var(--ff-body);
+            line-height: 1.4
+        }
+
+        .pain-card p {
+            font-size: .82rem;
+            line-height: 1.6
+        }
+
+        .pain-card.fatal h3 {
+            color: #F87171
+        }
+
+        .pain-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--indigo);
+            opacity: 0;
+            transition: opacity .3s
+        }
+
+        .pain-card:hover::before {
+            opacity: .4
+        }
+
+        /* ---- SOLUTION ---- */
+        #solution {
+            padding: var(--section) var(--pad);
+            background: var(--bg)
+        }
+
+        .sol-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px
+        }
+
+        .sol-card {
+            background: var(--bg2);
+            border: 1px solid var(--rule);
+            border-radius: var(--r);
+            padding: 28px;
+            transition: border-color .3s, transform .3s, box-shadow .3s
+        }
+
+        .sol-card:hover {
+            border-color: rgba(99, 102, 241, .3);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, .35), 0 0 32px rgba(99, 102, 241, .06)
+        }
+
+        .sol-card--span2 {
+            grid-column: span 2
+        }
+
+        .sol-icon {
+            font-size: 1.6rem;
+            margin-bottom: .9rem;
+            display: block
+        }
+
+        .sol-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: .5rem;
+            font-family: var(--ff-body);
+            letter-spacing: -.01em
+        }
+
+        .sol-card p {
+            font-size: .83rem;
+            line-height: 1.6
+        }
+
+        .sol-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 1rem
+        }
+
+        .sol-tag {
+            padding: 3px 10px;
+            border-radius: 100px;
+            border: 1px solid rgba(99, 102, 241, .2);
+            color: var(--indigo);
+            font-size: .68rem;
+            font-weight: 600;
+            font-family: var(--ff-body);
+            letter-spacing: .05em;
+            background: rgba(99, 102, 241, .06)
+        }
+
+        @media(max-width:860px) {
+            .sol-grid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .sol-card--span2 {
+                grid-column: span 2
+            }
+        }
+
+        @media(max-width:540px) {
+            .sol-grid {
+                grid-template-columns: 1fr
+            }
+
+            .sol-card--span2 {
+                grid-column: span 1
+            }
+        }
+
+        /* ---- TESTIMONIALS ---- */
+        #testimonials {
+            background: var(--bg3);
+            padding: var(--section) var(--pad);
+            border-top: 1px solid var(--rule)
+        }
+
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 0
+        }
+
+        .test-card {
+            background: var(--bg2);
+            border: 1px solid var(--rule);
+            border-radius: var(--r);
+            padding: 28px;
+            transition: border-color .3s
+        }
+
+        .test-card:hover {
+            border-color: rgba(99, 102, 241, .2)
+        }
+
+        .test-stars {
+            color: #F59E0B;
+            font-size: .95rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px
+        }
+
+        .test-quote {
+            color: var(--ink);
+            font-size: .9rem;
+            line-height: 1.7;
+            margin-bottom: 1.4rem;
+            font-style: italic
+        }
+
+        .test-who {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .test-av {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: .82rem;
+            flex-shrink: 0
+        }
+
+        .test-name {
+            font-size: .86rem;
+            font-weight: 600;
+            color: var(--ink);
+            font-family: var(--ff-body)
+        }
+
+        .test-role {
+            font-size: .74rem;
+            color: var(--ink2);
+            font-family: var(--ff-body)
+        }
+
+        @media(max-width:760px) {
+            .test-grid {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        @media(max-width:500px) {
+            .test-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ---- HOW IT WORKS ---- */
+        #how {
+            padding: var(--section) var(--pad);
+            background: var(--bg)
+        }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            position: relative;
+            margin-top: 8px
+        }
+
+        .how-steps::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: calc(16.66% + 20px);
+            right: calc(16.66% + 20px);
+            height: 1px;
+            background: linear-gradient(90deg, var(--indigo), var(--green));
+            opacity: .2;
+            z-index: 0
+        }
+
+        .how-step {
+            padding: 0 24px;
+            text-align: center;
+            position: relative;
+            z-index: 1
+        }
+
+        .how-step-ico {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--bg2);
+            border: 1.5px solid var(--rule);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin: 0 auto 1.2rem;
+            position: relative;
+            transition: border-color .3s
+        }
+
+        .how-step:hover .how-step-ico {
+            border-color: var(--indigo)
+        }
+
+        .how-step-num {
+            font-family: var(--ff-head);
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: rgba(99, 102, 241, .05);
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+            user-select: none
+        }
+
+        .how-step h3 {
+            font-size: .92rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: .5rem;
+            font-family: var(--ff-body);
+            letter-spacing: -.01em
+        }
+
+        .how-step p {
+            font-size: .82rem;
+            line-height: 1.6
+        }
+
+        @media(max-width:640px) {
+            .how-steps {
+                grid-template-columns: 1fr;
+                gap: 36px
+            }
+
+            .how-steps::before {
+                display: none
+            }
+
+            .how-step {
+                padding: 0
+            }
+        }
+
+        /* ---- PRICING ---- */
+        #pricing {
+            background: var(--bg2);
+            padding: var(--section) var(--pad);
+            border-top: 1px solid var(--rule)
+        }
+
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 920px;
+            margin: 0 auto;
+            align-items: start
+        }
+
+        .price-card {
+            background: var(--bg);
+            border: 1px solid var(--rule);
+            border-radius: var(--r);
+            padding: 32px 26px;
+            position: relative;
+            transition: border-color .3s
+        }
+
+        .price-card--feat {
+            border-color: rgba(99, 102, 241, .35);
+            box-shadow: 0 0 48px rgba(99, 102, 241, .08)
+        }
+
+        .price-tier {
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--ink2);
+            margin-bottom: .7rem;
+            font-family: var(--ff-body)
+        }
+
+        .price-tier.hi {
+            color: var(--indigo)
+        }
+
+        .price-amt {
+            font-family: var(--ff-head);
+            font-size: 2.4rem;
+            color: var(--ink);
+            line-height: 1;
+            margin-bottom: .3rem
+        }
+
+        .price-amt.hi {
+            color: var(--indigo)
+        }
+
+        .price-amt sub {
+            font-size: .95rem;
+            color: var(--ink2);
+            font-family: var(--ff-body);
+            font-weight: 400
+        }
+
+        .price-desc {
+            font-size: .82rem;
+            color: var(--ink2);
+            margin-bottom: 1.6rem;
+            line-height: 1.6
+        }
+
+        .price-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--indigo);
+            color: #fff;
+            font-size: .65rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 100px;
+            font-family: var(--ff-body);
+            letter-spacing: .07em;
+            white-space: nowrap
+        }
+
+        .pf-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            margin-bottom: 1.8rem
+        }
+
+        .pf-list li {
+            font-family: var(--ff-body);
+            font-size: .83rem;
+            color: var(--ink);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px
+        }
+
+        .pf-list li.dim {
+            color: var(--ink3);
+            opacity: .55
+        }
+
+        .pf-list li span {
+            flex-shrink: 0;
+            color: var(--green);
+            font-size: .78rem
+        }
+
+        .pf-list li.dim span {
+            color: var(--ink3)
+        }
+
+        @media(max-width:720px) {
+            .price-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ---- FAQ ---- */
+        #faq {
+            padding: var(--section) var(--pad);
+            background: var(--bg)
+        }
+
+        .faq-wrap {
+            max-width: 700px;
+            margin: 0 auto
+        }
+
+        .faq-list {
+            margin-top: 8px
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--rule)
+        }
+
+        .faq-item:first-child {
+            border-top: 1px solid var(--rule)
+        }
+
+        .faq-q {
+            width: 100%;
+            background: none;
+            border: none;
+            color: var(--ink);
+            font-family: var(--ff-body);
+            font-size: .95rem;
+            font-weight: 500;
+            text-align: left;
+            padding: 20px 0;
+            cursor: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            transition: color .2s
+        }
+
+        .faq-q:hover {
+            color: var(--indigo)
+        }
+
+        .faq-q[aria-expanded="true"] {
+            color: var(--indigo)
+        }
+
+        .faq-arr {
+            font-size: 1.1rem;
+            color: var(--indigo);
+            transition: transform .3s;
+            flex-shrink: 0
+        }
+
+        .faq-q[aria-expanded="true"] .faq-arr {
+            transform: rotate(180deg)
+        }
+
+        .faq-a {
+            font-family: var(--ff-body);
+            font-size: .88rem;
+            color: var(--ink2);
+            line-height: 1.7;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease, padding .35s ease;
+            padding: 0
+        }
+
+        .faq-a.open {
+            max-height: 200px;
+            padding: 0 0 18px
+        }
+
+        /* ---- CTA SECTION ---- */
+        #cta {
+            padding: var(--section) var(--pad);
+            background: var(--bg3);
+            border-top: 1px solid var(--rule);
+            position: relative;
+            overflow: hidden;
+            text-align: center
+        }
+
+        #cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 220px;
+            background: radial-gradient(ellipse, rgba(99, 102, 241, .09), transparent 70%);
+            pointer-events: none
+        }
+
+        .cta-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem
+        }
+
+        .cta-note {
+            font-size: .75rem;
+            color: var(--ink3);
+            margin-top: 1.4rem
+        }
+
+        /* ---- FOOTER ---- */
+        footer {
+            background: #04040A;
+            border-top: 1px solid var(--rule);
+            padding: 52px var(--pad) 32px
+        }
+
+        .ft-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 36px;
+            margin-bottom: 40px
+        }
+
+        .ft-brand {
+            display: flex;
+            flex-direction: column
+        }
+
+        .ft-logo {
+            font-family: var(--ff-head);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--ink);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: .9rem
+        }
+
+        .ft-logo-mark {
+            width: 29px;
+            height: 29px;
+            border-radius: 8px;
+            background: var(--indigo);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .72rem;
+            font-weight: 700;
+            color: #fff;
+            font-family: var(--ff-body);
+            flex-shrink: 0
+        }
+
+        .ft-desc {
+            font-size: .82rem;
+            color: var(--ink2);
+            line-height: 1.65;
+            max-width: 240px
+        }
+
+        .ft-socials {
+            display: flex;
+            gap: 9px;
+            margin-top: 1.2rem
+        }
+
+        .ft-social {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid var(--rule);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ink2);
+            font-size: .8rem;
+            transition: all .2s
+        }
+
+        .ft-social:hover {
+            border-color: rgba(99, 102, 241, .3);
+            color: var(--indigo)
+        }
+
+        .ft-col h4 {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+            color: var(--ink2);
+            margin-bottom: 1rem;
+            font-family: var(--ff-body)
+        }
+
+        .ft-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .ft-col ul a {
+            font-size: .84rem;
+            color: var(--ink3);
+            transition: color .2s
+        }
+
+        .ft-col ul a:hover {
+            color: var(--ink)
+        }
+
+        .ft-bottom {
+            max-width: 1100px;
+            margin: 0 auto;
+            border-top: 1px solid var(--rule);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px
+        }
+
+        .ft-copy {
+            font-size: .76rem;
+            color: var(--ink3)
+        }
+
+        .ft-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: .72rem;
+            color: var(--ink2)
+        }
+
+        .ft-status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--green);
+            animation: pulse 2s ease infinite
+        }
+
+        @media(max-width:720px) {
+            .ft-grid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .ft-brand {
+                grid-column: span 2
+            }
+        }
+
+        @media(max-width:460px) {
+            .ft-grid {
+                grid-template-columns: 1fr
+            }
+
+            .ft-brand {
+                grid-column: span 1
+            }
+        }
+
+        /* ---- MOBILE STICKY ---- */
+        #mob-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(6, 6, 14, .96);
+            border-top: 1px solid rgba(99, 102, 241, .2);
+            backdrop-filter: blur(18px);
+            padding: 11px 18px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px
+        }
+
+        #mob-bar p {
+            font-size: .84rem;
+            color: var(--ink);
+            font-family: var(--ff-body);
+            margin: 0
+        }
+
+        #mob-bar p span {
+            color: var(--indigo);
+            font-weight: 600
+        }
+
+        .mob-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            font-family: var(--ff-body);
+            font-size: .82rem;
+            font-weight: 700;
+            padding: 9px 16px;
+            border-radius: 100px;
+            text-decoration: none;
+            white-space: nowrap;
+            flex-shrink: 0;
+            box-shadow: 0 0 16px rgba(37, 211, 102, .25)
+        }
+
+        @media(max-width:768px) {
+            #mob-bar {
+                display: flex
+            }
+
+            ;
+
+            body {
+                padding-bottom: 66px
+            }
+        }
+
+        /* ---- ANNOUNCE BAR ---- */
+        #abar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            background: linear-gradient(90deg, rgba(99, 102, 241, .85), rgba(16, 185, 129, .8));
+            text-align: center;
+            padding: 7px 20px;
+            font-family: var(--ff-body);
+            font-size: .74rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, .9);
+            letter-spacing: .02em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px
+        }
+
+        #abar strong {
+            color: #fff;
+            font-weight: 700
+        }
+
+        #abar .ab-x {
+            position: absolute;
+            right: 14px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, .6);
+            font-size: .9rem;
+            cursor: none;
+            line-height: 1;
+            transition: color .2s
+        }
+
+        #abar .ab-x:hover {
+            color: #fff
+        }
+
+        body.bv nav {
+            top: 34px
+        }
+    </style>
 </head>
-<body class="bar-visible">
 
-<!-- CURSOR -->
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
+<body class="bv">
+    <div id="cdot"></div>
+    <div id="cring"></div>
 
-<!-- ===================== ANNOUNCEMENT BAR ===================== -->
-<div id="announce-bar">
-  🚀 Now serving <strong>200+ WhatsApp-first businesses</strong> across MENA &amp; LATAM
-  <button class="ab-close" id="abClose" aria-label="Close">✕</button>
-</div>
-
-<!-- GLOWING ORBS -->
-<div class="orb-container">
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-</div>
-
-<!-- ===================== NAV ===================== -->
-<nav id="navbar">
-  <a href="#" class="nav-logo">
-    <span class="nav-logo-mark">AL</span>
-    Agentic&nbsp;<span class="gold">LX</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#problem">Problem</a></li>
-    <li><a href="#solution">Solution</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#faq">FAQ</a></li>
-  </ul>
-  <div class="nav-cta">
-    <a href="#pricing" class="btn btn-outline" style="padding:10px 22px;font-size:0.85rem;">View Pricing</a>
-    <a href="#contact" class="btn btn-gold" style="padding:10px 22px;font-size:0.85rem;">See It Live →</a>
-  </div>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- ===================== HERO ===================== -->
-<div style="position:relative;z-index:2;">
-<div id="hero">
-  <div class="hero-content reveal">
-    <div class="hero-eyebrow">
-      <span class="dot"></span>
-      Now Live — AI Reception for WhatsApp
+    <!-- ANNOUNCE BAR -->
+    <div id="abar">
+        âš¡ Now serving <strong>200+ WhatsApp-first businesses</strong> across MENA &amp; South Asia
+        <button class="ab-x" id="abX" aria-label="Close">âœ•</button>
     </div>
-    <h1 class="hero-headline">
-      Your business<br />
-      runs on <span class="ai-word">AI</span><br />
-      24&thinsp;/&thinsp;7
-    </h1>
-    <p class="hero-sub">Agentic LX answers every WhatsApp message, qualifies leads, and books appointments — while you sleep, travel, and scale.</p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-gold btn-lg">See It Live →</a>
-      <a href="#how" class="btn btn-outline btn-lg">How It Works</a>
-    </div>
-    <div class="hero-trust">
-      <div class="hero-trust-avatars">
-        <div class="hero-trust-avatar">JM</div>
-        <div class="hero-trust-avatar" style="background:linear-gradient(135deg,#F5A623,#c9851a);">SR</div>
-        <div class="hero-trust-avatar" style="background:linear-gradient(135deg,#2f8fff,#7B2FFF);">AK</div>
-        <div class="hero-trust-avatar" style="background:linear-gradient(135deg,#25D366,#128C7E);">PN</div>
-      </div>
-      <span>Trusted by <strong style="color:var(--white);">500+ businesses</strong> across South Asia</span>
-    </div>
-  </div>
 
-  <div class="hero-right reveal reveal-right delay-2">
-    <div class="phone-wrap">
-      <div class="wa-badge">⚡ Responding in 2s</div>
-      <div class="phone-shell">
-
-        <!-- Notch -->
-        <div class="phone-notch">
-          <div class="phone-notch-pill">
-            <div class="phone-notch-camera"></div>
-            <div class="phone-notch-speaker"></div>
-          </div>
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#" class="n-logo">
+            <span class="n-logo-mark">AL</span>
+            Agentic&nbsp;<span style="color:var(--indigo)">LX</span>
+        </a>
+        <ul class="n-links">
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="n-cta">
+            <a href="#pricing" class="btn btn-ghost" style="padding:10px 20px;font-size:.83rem">View Plans</a>
+            <a href="#cta" class="btn btn-primary" style="padding:10px 20px;font-size:.83rem">See It Live â†’</a>
         </div>
+        <button class="hbg" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
 
-        <!-- WhatsApp Header -->
-        <div class="wa-header">
-          <span class="wa-back-arrow">‹</span>
-          <div class="wa-avatar">🤖</div>
-          <div class="wa-header-info">
-            <div class="wa-contact-name">Agentic LX AI</div>
-            <div class="wa-contact-status" id="waStatus">typing...</div>
-          </div>
-          <div class="wa-header-icons">
-            <span>📹</span>
-            <span>📞</span>
-          </div>
-        </div>
-
-        <!-- Chat Body -->
-        <div class="wa-body" id="waBubbles">
-          <div class="wa-date-chip">Today, 2:47 AM</div>
-
-          <!-- Msg 1 — lead -->
-          <div class="wa-bubble incoming" id="p1">
-            Hi, are you still taking new clients?
-            <div class="wa-time">2:47 AM</div>
-          </div>
-
-          <!-- Typing -->
-          <div class="wa-typing" id="pTyping"><span></span><span></span><span></span></div>
-
-          <!-- Msg 2 — AI -->
-          <div class="wa-bubble outgoing" id="p2">
-            Hi! 👋 Yes we are! I'm the AI assistant for [Business]. Quick question — are you looking for a consultation this week or next week?
-            <div class="wa-time">2:47 AM <span class="wa-tick">✔✔</span></div>
-          </div>
-
-          <!-- Msg 3 — lead -->
-          <div class="wa-bubble incoming" id="p3">
-            This week if possible
-            <div class="wa-time">2:47 AM</div>
-          </div>
-
-          <!-- Msg 4 — AI -->
-          <div class="wa-bubble outgoing" id="p4">
-            Perfect! I have Thursday 3pm or Friday 10am available. Which works better for you? 📅
-            <div class="wa-time">2:47 AM <span class="wa-tick">✔✔</span></div>
-          </div>
-
-          <!-- Msg 5 — lead -->
-          <div class="wa-bubble incoming" id="p5">
-            Thursday works
-            <div class="wa-time">2:48 AM</div>
-          </div>
-
-          <!-- Msg 6 — AI -->
-          <div class="wa-bubble outgoing" id="p6">
-            Booked! ✅ You'll get a confirmation on WhatsApp shortly. See you Thursday at 3pm!
-            <div class="wa-time">2:48 AM <span class="wa-tick">✔✔</span></div>
-          </div>
-        </div>
-
-        <!-- Input bar -->
-        <div class="wa-input-bar">
-          <div class="wa-input-field">Message</div>
-          <div class="wa-input-btn">➤</div>
-        </div>
-
-        <!-- Home bar -->
-        <div class="phone-home-bar">
-          <div class="phone-home-bar-pill"></div>
-        </div>
-
-      </div><!-- /phone-shell -->
-    </div><!-- /phone-wrap -->
-  </div>
-</div>
-</div>
-
-<!-- ===================== LOGO STRIP ===================== -->
-<div id="logo-strip">
-  <div class="logo-strip-inner">
-    <span class="logo-strip-label">Trusted by teams using</span>
-    <div class="logo-strip-divider"></div>
-    <span class="logo-badge"><span class="lb-dot" style="background:#F5A623;"></span>PropEdge</span>
-    <span class="logo-badge"><span class="lb-dot" style="background:#25D366;"></span>Studiocraft</span>
-    <span class="logo-badge"><span class="lb-dot" style="background:#7B2FFF;"></span>UrbanNest</span>
-    <span class="logo-badge"><span class="lb-dot" style="background:#2f8fff;"></span>ApexAutos</span>
-    <span class="logo-badge"><span class="lb-dot" style="background:#ff6060;"></span>LearnSmart</span>
-    <span class="logo-badge"><span class="lb-dot" style="background:#F5A623;"></span>MedConnect</span>
-  </div>
-</div>
-
-<!-- ===================== STATS BAR ===================== -->
-<div id="stats-bar">
-  <div class="stats-bar-inner">
-    <div class="stat-item reveal">
-      <span class="stat-value"><span class="counter" data-from="47" data-to="8" data-suffix=" sec" data-prefix="">8 sec</span></span>
-      <div class="stat-label"><span style="color:rgba(255,255,255,0.3);text-decoration:line-through;">47 min</span> <span class="stat-arrow">→</span> avg. first reply time</div>
-    </div>
-    <div class="stat-item reveal delay-2">
-      <span class="stat-value"><span class="counter" data-from="1" data-to="3.2" data-suffix="x" data-prefix="">3.2x</span></span>
-      <div class="stat-label">more leads converted vs. manual replies</div>
-    </div>
-    <div class="stat-item reveal delay-3">
-      <span class="stat-value"><span class="counter" data-from="0" data-to="200" data-suffix="+" data-prefix="">200+</span></span>
-      <div class="stat-label">businesses live across MENA &amp; LATAM</div>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== PROBLEM SECTION ===================== -->
-<section id="problem" class="clip-top">
-  <div class="inner">
-    <div class="section-header">
-      <span class="section-label">The Reality Check</span>
-      <span class="gold-rule"></span>
-      <h2>What Usually Happens<br /><em>without</em> Agentic LX</h2>
-      <p style="max-width:520px;margin:1rem auto 0;">Every missed message is a missed sale. Here's the painful pattern most businesses are stuck in.</p>
-    </div>
-    <div class="pain-flow">
-      <div class="pain-step glass-card reveal delay-1">
-        <div class="pain-step-num">01</div>
-        <div class="pain-step-icon">💬</div>
-        <h3>Lead sends a WhatsApp message at 10 PM</h3>
-        <p>They're motivated, ready to buy. The intent is at its peak.</p>
-      </div>
-      <div class="pain-step glass-card reveal delay-2">
-        <div class="pain-step-num">02</div>
-        <div class="pain-step-icon">🔇</div>
-        <h3>Your team is offline. No reply for hours.</h3>
-        <p>The customer waits. Patience runs thin. Competitor replies in seconds.</p>
-      </div>
-      <div class="pain-step glass-card reveal delay-3">
-        <div class="pain-step-num">03</div>
-        <div class="pain-step-icon">📉</div>
-        <h3>They move on. Competitor closed the deal.</h3>
-        <p>By the time you reply in the morning, the deal is dead — and you don't even know it.</p>
-      </div>
-      <div class="pain-step glass-card fatal reveal delay-4">
-        <div class="pain-step-num">04</div>
-        <div class="pain-step-icon">💸</div>
-        <h3>You lose 60–70% of your leads this way</h3>
-        <p>Every month, every quarter — revenue leaking silently while you sleep.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===================== SOLUTION SECTION ===================== -->
-<section id="solution" style="padding: var(--section-pad) clamp(20px,5vw,60px); background: var(--obsidian);">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:70px;">
-      <span class="section-label">AI Reception System</span>
-      <span class="gold-rule"></span>
-      <h2 class="reveal">Everything your front desk does,<br />done <span class="gold">10× better</span> by AI</h2>
-      <p class="reveal delay-1" style="max-width:500px;margin:1rem auto 0;">Five intelligent capabilities that work together to never let a lead slip through the cracks.</p>
-    </div>
-
-    <div class="solution-grid">
-      <!-- Card 1 — large -->
-      <div class="glass-card sol-card sol-card--large reveal delay-1" style="padding:40px;grid-column:span 2;">
-        <div class="sol-icon">⚡</div>
-        <h3 style="color:var(--white);margin-bottom:0.7rem;">Instant 24/7 Response</h3>
-        <p style="max-width:380px;">Replies to every WhatsApp message in under 3 seconds — even at 2 AM on a Sunday. No human delay, no missed opportunity.</p>
-        <div style="margin-top:1.5rem;display:flex;gap:12px;flex-wrap:wrap;">
-          <span class="feat-tag">Auto-reply</span>
-          <span class="feat-tag">Multi-language</span>
-          <span class="feat-tag">Contextual Memory</span>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="glass-card sol-card reveal delay-2" style="padding:36px;">
-        <div class="sol-icon">🎯</div>
-        <h3 style="color:var(--white);margin-bottom:0.7rem;">Smart Lead Qualification</h3>
-        <p>Asks the right questions, scores each lead by intent and budget, and routes hot leads to your team instantly.</p>
-      </div>
-      <!-- Card 3 -->
-      <div class="glass-card sol-card reveal delay-3" style="padding:36px;">
-        <div class="sol-icon">📅</div>
-        <h3 style="color:var(--white);margin-bottom:0.7rem;">Appointment Booking</h3>
-        <p>Integrates with Google Calendar and Calendly to book, confirm, and remind — all within the WhatsApp thread.</p>
-      </div>
-      <!-- Card 4 -->
-      <div class="glass-card sol-card reveal delay-4" style="padding:36px;">
-        <div class="sol-icon">📊</div>
-        <h3 style="color:var(--white);margin-bottom:0.7rem;">CRM & Lead Capture</h3>
-        <p>Every conversation auto-logged into your CRM with lead score, intent tags, and full chat history.</p>
-      </div>
-      <!-- Card 5 — spans 2 on desktop -->
-      <div class="glass-card sol-card sol-card--wide reveal delay-5" style="padding:36px;grid-column:span 2;">
-        <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
-          <div class="sol-icon" style="flex-shrink:0;">🔁</div>
-          <div>
-            <h3 style="color:var(--white);margin-bottom:0.7rem;">Automated Follow-Up Sequences</h3>
-            <p style="max-width:500px;">AI sends personalised follow-ups at optimal times — product brochures, payment links, testimonials — until the deal closes.</p>
-            <div style="margin-top:1.2rem;display:flex;gap:12px;flex-wrap:wrap;">
-              <span class="feat-tag">Drip sequences</span>
-              <span class="feat-tag">Payment links</span>
-              <span class="feat-tag">Re-engagement</span>
+    <!-- HERO -->
+    <div style="position:relative;z-index:2">
+        <div id="hero">
+            <div class="h-content rv">
+                <div class="h-eyebrow">
+                    <span class="dot"></span>
+                    Now Live â€” AI Reception for WhatsApp
+                </div>
+                <h1 class="h-head">
+                    Your business<br />
+                    runs on <em>AI</em><br />
+                    24&thinsp;/&thinsp;7
+                </h1>
+                <p class="h-sub">Agentic LX answers every WhatsApp message, qualifies leads, and books appointments â€”
+                    while you sleep, travel, and scale.</p>
+                <div class="h-actions">
+                    <a href="#cta" class="btn btn-primary btn-lg">See It Live â†’</a>
+                    <a href="#how" class="btn btn-ghost btn-lg">How It Works</a>
+                </div>
+                <div class="h-trust">
+                    <div class="h-avs">
+                        <div class="h-av">JM</div>
+                        <div class="h-av" style="background:linear-gradient(135deg,#a855f7,#6366F1)">SR</div>
+                        <div class="h-av" style="background:linear-gradient(135deg,#10B981,#059669)">AK</div>
+                        <div class="h-av" style="background:linear-gradient(135deg,#F59E0B,#D97706)">PN</div>
+                    </div>
+                    <span>Trusted by <strong style="color:var(--ink)">500+ businesses</strong> across South Asia</span>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<style>
-  .solution-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .sol-card { transition: all 0.3s ease; }
-  .sol-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: block;
-  }
-  .feat-tag {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 100px;
-    border: 1px solid rgba(245,166,35,0.2);
-    color: var(--gold);
-    font-size: 0.72rem;
-    font-weight: 600;
-    font-family: var(--font-sans);
-    letter-spacing: 0.06em;
-    background: rgba(245,166,35,0.06);
-  }
-  @media (max-width: 900px) {
-    .solution-grid { grid-template-columns: 1fr 1fr; }
-    .sol-card--large, .sol-card--wide { grid-column: span 2; }
-  }
-  @media (max-width: 580px) {
-    .solution-grid { grid-template-columns: 1fr; }
-    .sol-card--large, .sol-card--wide { grid-column: span 1; }
-  }
-</style>
-
-<!-- ===================== SOCIAL PROOF ===================== -->
-<section id="testimonials" class="clip-both" style="background:var(--obsidian-2);padding:var(--section-pad) clamp(20px,5vw,60px);">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:60px;">
-      <span class="section-label">Client Results</span>
-      <span class="gold-rule"></span>
-      <h2 class="reveal">Real businesses,<br /><span class="gold">real growth</span></h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
-
-      <div class="glass-card reveal delay-1" style="padding:36px;">
-        <div style="display:flex;gap:6px;margin-bottom:1.2rem;">
-          <span style="color:var(--gold);font-size:1.1rem;">★★★★★</span>
+            <div class="h-right rv dl2">
+                <div class="ph-wrap">
+                    <div class="wa-badge">âš¡ Responding in 2s</div>
+                    <div class="ph-shell">
+                        <div class="ph-notch">
+                            <div class="ph-pill">
+                                <div class="ph-cam"></div>
+                                <div class="ph-spk"></div>
+                            </div>
+                        </div>
+                        <div class="wa-hd">
+                            <div class="wa-av">ðŸ¤–</div>
+                            <div class="wa-ni">
+                                <div class="wa-nm">Agentic LX AI</div>
+                                <div class="wa-st" id="waStatus">typing...</div>
+                            </div>
+                        </div>
+                        <div class="wa-body" id="waBubbles">
+                            <div class="wa-chip">Today, 2:47 AM</div>
+                            <div class="bbl in" id="p1">Hi, are you still taking new clients?<div class="bbl-t">2:47 AM
+                                </div>
+                            </div>
+                            <div class="wa-typing" id="pTyping"><span></span><span></span><span></span></div>
+                            <div class="bbl out" id="p2">Hi! ðŸ‘‹ Yes we are! I'm the AI assistant. Are you looking for a
+                                consultation this week or next?<div class="bbl-t">2:47 AM</div>
+                            </div>
+                            <div class="bbl in" id="p3">This week if possible<div class="bbl-t">2:47 AM</div>
+                            </div>
+                            <div class="bbl out" id="p4">Perfect! Thursday 3pm or Friday 10am â€” which works? ðŸ“…<div
+                                    class="bbl-t">2:47 AM</div>
+                            </div>
+                            <div class="bbl in" id="p5">Thursday works<div class="bbl-t">2:48 AM</div>
+                            </div>
+                            <div class="bbl out" id="p6">Booked! âœ… Confirmation coming shortly. See you Thursday 3pm!
+                                <div class="bbl-t">2:48 AM</div>
+                            </div>
+                        </div>
+                        <div class="wa-bar">
+                            <div class="wa-input">Message</div>
+                            <div class="wa-send">âž¤</div>
+                        </div>
+                        <div class="ph-hbar">
+                            <div class="ph-hpill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p style="color:var(--white);font-size:1rem;line-height:1.65;margin-bottom:1.5rem;font-style:italic;">"We went from replying to leads the next morning to converting them at midnight. Agentic LX literally tripled our show-up rate within 30 days."</p>
-        <div style="display:flex;align-items:center;gap:14px;">
-          <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--violet));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:0.9rem;flex-shrink:0;">SR</div>
-          <div>
-            <div style="color:var(--white);font-weight:600;font-size:0.9rem;font-family:var(--font-sans);">Siddharth Rao</div>
-            <div style="color:var(--muted);font-size:0.78rem;font-family:var(--font-sans);">Founder, PropEdge Hyderabad</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="glass-card reveal delay-2" style="padding:36px;border-color:rgba(245,166,35,0.2);box-shadow:0 0 40px rgba(245,166,35,0.06);">
-        <div style="display:flex;gap:6px;margin-bottom:1.2rem;">
-          <span style="color:var(--gold);font-size:1.1rem;">★★★★★</span>
-        </div>
-        <p style="color:var(--white);font-size:1rem;line-height:1.65;margin-bottom:1.5rem;font-style:italic;">"I was skeptical AI could handle complex queries about our interior design packages. It handles everything better than our junior staff — and never takes a sick day."</p>
-        <div style="display:flex;align-items:center;gap:14px;">
-          <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:0.9rem;flex-shrink:0;">PM</div>
-          <div>
-            <div style="color:var(--white);font-weight:600;font-size:0.9rem;font-family:var(--font-sans);">Priya Mehta</div>
-            <div style="color:var(--muted);font-size:0.78rem;font-family:var(--font-sans);">CEO, Studiocraft Interiors</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="glass-card reveal delay-3" style="padding:36px;">
-        <div style="display:flex;gap:6px;margin-bottom:1.2rem;">
-          <span style="color:var(--gold);font-size:1.1rem;">★★★★★</span>
-        </div>
-        <p style="color:var(--white);font-size:1rem;line-height:1.65;margin-bottom:1.5rem;font-style:italic;">"Setup took 48 hours. ROI was visible in week one. We've qualified over 1,400 leads without touching a single keyboard. This is the future."</p>
-        <div style="display:flex;align-items:center;gap:14px;">
-          <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#2f8fff,var(--violet));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:0.9rem;flex-shrink:0;">AK</div>
-          <div>
-            <div style="color:var(--white);font-weight:600;font-size:0.9rem;font-family:var(--font-sans);">Arjun Kapoor</div>
-            <div style="color:var(--muted);font-size:0.78rem;font-family:var(--font-sans);">MD, Kapoor Automobiles Group</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===================== HOW IT WORKS ===================== -->
-<section id="how" style="padding:var(--section-pad) clamp(20px,5vw,60px);background:var(--obsidian);">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:70px;">
-      <span class="section-label">The Process</span>
-      <span class="gold-rule"></span>
-      <h2 class="reveal">Up and running in<br /><span class="gold">48 hours</span></h2>
-      <p class="reveal delay-1" style="max-width:440px;margin:1rem auto 0;">No code. No complex integrations. Three steps and your AI receptionist is live.</p>
-    </div>
-    <div class="how-timeline">
-      <div class="how-step reveal delay-1">
-        <div class="how-step-icon">
-          <span>🔗</span>
-        </div>
-        <div class="how-connector"></div>
-        <h3 style="color:var(--white);margin-bottom:0.6rem;">Connect WhatsApp</h3>
-        <p>Link your WhatsApp Business number in one click. We handle the API, verification, and WABA onboarding.</p>
-        <div class="how-step-num">01</div>
-      </div>
-      <div class="how-step reveal delay-2">
-        <div class="how-step-icon">
-          <span>🧠</span>
-        </div>
-        <div class="how-connector"></div>
-        <h3 style="color:var(--white);margin-bottom:0.6rem;">Train Your AI</h3>
-        <p>Feed it your product catalogue, pricing, FAQs, and tone of voice. Our team fine-tunes it in 24 hours.</p>
-        <div class="how-step-num">02</div>
-      </div>
-      <div class="how-step reveal delay-3">
-        <div class="how-step-icon">
-          <span>🚀</span>
-        </div>
-        <div class="how-connector last"></div>
-        <h3 style="color:var(--white);margin-bottom:0.6rem;">Go Live &amp; Scale</h3>
-        <p>Your AI receptionist handles hundreds of simultaneous conversations while you focus on closing deals.</p>
-        <div class="how-step-num">03</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-  .how-timeline {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    position: relative;
-  }
-  .how-step {
-    padding: 0 24px;
-    text-align: center;
-    position: relative;
-  }
-  .how-step-icon {
-    width: 76px; height: 76px;
-    border-radius: 50%;
-    background: var(--glass);
-    border: 2px solid rgba(245,166,35,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    margin: 0 auto 1.4rem;
-    position: relative;
-    z-index: 2;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  .how-step:hover .how-step-icon {
-    border-color: var(--gold);
-    box-shadow: 0 0 30px rgba(245,166,35,0.2);
-  }
-  .how-connector {
-    position: absolute;
-    top: 38px;
-    left: calc(50% + 38px);
-    right: calc(-50% + 38px);
-    height: 2px;
-    background: linear-gradient(90deg, rgba(245,166,35,0.4), rgba(123,47,255,0.4));
-    z-index: 1;
-  }
-  .how-connector.last { display: none; }
-  .how-step-num {
-    display: inline-block;
-    font-family: var(--font-serif);
-    font-size: 4rem;
-    color: rgba(245,166,35,0.06);
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
-    pointer-events: none;
-    user-select: none;
-  }
-  @media (max-width: 700px) {
-    .how-timeline { grid-template-columns: 1fr; gap: 48px; }
-    .how-connector { display: none; }
-    .how-step { padding: 0; }
-  }
-</style>
-
-<!-- ===================== PRICING ===================== -->
-<section id="pricing" class="clip-both" style="background:var(--obsidian-2);padding:var(--section-pad) clamp(20px,5vw,60px);">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:60px;">
-      <span class="section-label">Simple Pricing</span>
-      <span class="gold-rule"></span>
-      <h2 class="reveal">Choose your <span class="gold">growth tier</span></h2>
-      <p class="reveal delay-1" style="max-width:440px;margin:1rem auto 0;">All plans include a 14-day free trial. No credit card required.</p>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;max-width:980px;margin:0 auto;align-items:start;">
-
-      <!-- Starter -->
-      <div class="glass-card pricing-card reveal delay-1" style="padding:40px 32px;">
-        <div class="pricing-tier-label">Starter</div>
-        <div class="pricing-price">₹4,999<span>/mo</span></div>
-        <p style="margin-bottom:1.8rem;font-size:0.88rem;">Perfect for solo agents and small teams just getting started with AI.</p>
-        <ul class="pricing-features">
-          <li>✓ 1 WhatsApp number</li>
-          <li>✓ Up to 500 conversations/mo</li>
-          <li>✓ Lead qualification flow</li>
-          <li>✓ Basic CRM export (CSV)</li>
-          <li>✓ Email support</li>
-          <li class="dim">✗ Calendar booking</li>
-          <li class="dim">✗ Custom AI persona</li>
-        </ul>
-        <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;margin-top:2rem;">Start Free Trial</a>
-      </div>
-
-      <!-- Growth — highlighted -->
-      <div class="glass-card pricing-card featured reveal delay-2" style="padding:40px 32px;position:relative;border-color:rgba(245,166,35,0.4);box-shadow:0 0 60px rgba(245,166,35,0.12);">
-        <div class="pricing-badge">Most Popular</div>
-        <div class="pricing-tier-label gold">Growth</div>
-        <div class="pricing-price gold">₹12,999<span>/mo</span></div>
-        <p style="margin-bottom:1.8rem;font-size:0.88rem;">For growing businesses ready to automate their entire WhatsApp pipeline.</p>
-        <ul class="pricing-features">
-          <li>✓ 3 WhatsApp numbers</li>
-          <li>✓ Up to 3,000 conversations/mo</li>
-          <li>✓ Smart lead scoring</li>
-          <li>✓ Calendar &amp; appointment sync</li>
-          <li>✓ CRM integration (HubSpot/Zoho)</li>
-          <li>✓ Custom AI persona &amp; tone</li>
-          <li>✓ Priority support (4hr SLA)</li>
-        </ul>
-        <a href="#contact" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:2rem;">Start Free Trial</a>
-      </div>
-
-      <!-- Scale -->
-      <div class="glass-card pricing-card reveal delay-3" style="padding:40px 32px;">
-        <div class="pricing-tier-label">Scale</div>
-        <div class="pricing-price">Custom</div>
-        <p style="margin-bottom:1.8rem;font-size:0.88rem;">Enterprise-grade AI for large teams, agencies, and high-volume businesses.</p>
-        <ul class="pricing-features">
-          <li>✓ Unlimited WhatsApp numbers</li>
-          <li>✓ Unlimited conversations</li>
-          <li>✓ Multi-brand AI assistants</li>
-          <li>✓ Full API access</li>
-          <li>✓ Dedicated success manager</li>
-          <li>✓ Custom integrations</li>
-          <li>✓ 99.9% SLA guarantee</li>
-        </ul>
-        <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;margin-top:2rem;">Talk to Sales</a>
-      </div>
-
+    <!-- LOGO STRIP -->
+    <div id="logos">
+        <div class="logos-in">
+            <span class="logos-lbl">Trusted by teams using</span>
+            <div class="logos-div"></div>
+            <span class="logo-chip"><span class="dot" style="background:#6366F1"></span>PropEdge</span>
+            <span class="logo-chip"><span class="dot" style="background:#10B981"></span>Studiocraft</span>
+            <span class="logo-chip"><span class="dot" style="background:#a855f7"></span>UrbanNest</span>
+            <span class="logo-chip"><span class="dot" style="background:#F59E0B"></span>ApexAutos</span>
+            <span class="logo-chip"><span class="dot" style="background:#3B82F6"></span>LearnSmart</span>
+            <span class="logo-chip"><span class="dot" style="background:#10B981"></span>MedConnect</span>
+        </div>
     </div>
-  </div>
-</section>
 
-<style>
-  .pricing-tier-label {
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 0.8rem;
-  }
-  .pricing-tier-label.gold { color: var(--gold); }
-  .pricing-price {
-    font-family: var(--font-serif);
-    font-size: 2.8rem;
-    color: var(--white);
-    margin-bottom: 0.4rem;
-    line-height: 1;
-  }
-  .pricing-price.gold { color: var(--gold); }
-  .pricing-price span {
-    font-size: 1rem;
-    color: var(--muted);
-    font-family: var(--font-sans);
-    font-weight: 400;
-  }
-  .pricing-features {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .pricing-features li {
-    font-family: var(--font-sans);
-    font-size: 0.86rem;
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .pricing-features li.dim { color: var(--muted); opacity: 0.5; }
-  .pricing-badge {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(135deg, var(--gold), #e8950f);
-    color: #0A0A0F;
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 5px 16px;
-    border-radius: 100px;
-    font-family: var(--font-sans);
-    letter-spacing: 0.08em;
-    white-space: nowrap;
-  }
-</style>
-
-<!-- ===================== FAQ ===================== -->
-<section id="faq" style="padding:var(--section-pad) clamp(20px,5vw,60px);background:var(--obsidian);">
-  <div class="container" style="max-width:760px;">
-    <div style="text-align:center;margin-bottom:60px;">
-      <span class="section-label">FAQ</span>
-      <span class="gold-rule"></span>
-      <h2 class="reveal">Frequently asked<br /><span class="gold">questions</span></h2>
+    <!-- STATS -->
+    <div id="stats">
+        <div class="stats-in">
+            <div class="stat rv"><span class="stat-v"><span class="counter" data-from="47" data-to="8"
+                        data-suffix=" sec">8 sec</span></span>
+                <div class="stat-l"><s>47 min</s> â†’ avg first reply</div>
+            </div>
+            <div class="stat rv dl2"><span class="stat-v"><span class="counter" data-from="1" data-to="3.2"
+                        data-suffix="x">3.2x</span></span>
+                <div class="stat-l">more leads converted vs manual</div>
+            </div>
+            <div class="stat rv dl3"><span class="stat-v"><span class="counter" data-from="0" data-to="200"
+                        data-suffix="+">200+</span></span>
+                <div class="stat-l">businesses live across MENA &amp; LATAM</div>
+            </div>
+        </div>
     </div>
-    <div class="faq-list reveal">
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Do I need a developer to set this up?
-          <span class="faq-arrow">↓</span>
-        </button>
-        <div class="faq-a">No. Agentic LX is a no-code platform. Our onboarding team guides you through WhatsApp Business API connection, AI training, and going live — no technical knowledge required.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Will the AI sound robotic or generic?
-          <span class="faq-arrow">↓</span>
-        </button>
-        <div class="faq-a">Not at all. We train the AI on your specific products, pricing, brand voice, and FAQ library. Customers frequently don't realise they're talking to AI — until they ask directly.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          What happens when a lead asks something the AI doesn't know?
-          <span class="faq-arrow">↓</span>
-        </button>
-        <div class="faq-a">The AI gracefully acknowledges the question, collects the lead's details, and immediately notifies your team via SMS, email, or WhatsApp — so no lead is ever left unattended.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Is WhatsApp Business API compliant and approved?
-          <span class="faq-arrow">↓</span>
-        </button>
-        <div class="faq-a">Yes. We're an official Meta Business Partner. All integrations use the official WhatsApp Business API, fully compliant with Meta's terms of service and data policies.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Can I hand off high-intent leads to a human agent mid-conversation?
-          <span class="faq-arrow">↓</span>
-        </button>
-        <div class="faq-a">Absolutely. Our smart handoff feature detects high-intent signals and can instantly transfer the conversation to a human agent in your team — with full context preserved.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          How long does it take to go live?
-          <span class="faq-arrow">↓</span>
-        </button>
-        <div class="faq-a">Most clients are live within 48 hours of signing up. Our onboarding team works with you to connect your number, train the AI, and run test conversations before going live.</div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<style>
-  .faq-list { display: flex; flex-direction: column; gap: 0; }
-  .faq-item {
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .faq-item:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
-  .faq-q {
-    width: 100%;
-    background: none;
-    border: none;
-    color: var(--white);
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: left;
-    padding: 22px 4px;
-    cursor: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    transition: color 0.2s;
-  }
-  .faq-q:hover { color: var(--gold); }
-  .faq-q[aria-expanded="true"] { color: var(--gold); }
-  .faq-arrow {
-    font-size: 1.2rem;
-    color: var(--gold);
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-  }
-  .faq-q[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
-  .faq-a {
-    font-family: var(--font-sans);
-    font-size: 0.92rem;
-    color: var(--muted);
-    line-height: 1.7;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-    padding: 0 4px;
-  }
-  .faq-a.open {
-    max-height: 200px;
-    padding: 0 4px 20px;
-  }
-</style>
+    <!-- PROBLEM -->
+    <section id="problem">
+        <div class="wrap">
+            <div class="s-head rv">
+                <span class="label">The Reality Check</span>
+                <span class="rule"></span>
+                <h2>What happens without<br /><em style="font-style:italic;color:var(--indigo)">Agentic LX</em></h2>
+                <p style="max-width:480px;margin:.8rem auto 0;font-size:.95rem">Every missed message is a missed sale.
+                    Here's the pattern that costs businesses 60% of their leads.</p>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-card rv dl1">
+                    <span class="pain-n">01</span>
+                    <span class="pain-icon">ðŸ’¬</span>
+                    <h3>Lead messages you at 10 PM</h3>
+                    <p style="font-size:.82rem">Motivated, ready to buy. Intent at its peak.</p>
+                </div>
+                <div class="pain-card rv dl2">
+                    <span class="pain-n">02</span>
+                    <span class="pain-icon">ðŸ”‡</span>
+                    <h3>Your team is offline. No reply for hours.</h3>
+                    <p style="font-size:.82rem">Customer waits. Competitor replies in seconds.</p>
+                </div>
+                <div class="pain-card rv dl3">
+                    <span class="pain-n">03</span>
+                    <span class="pain-icon">ðŸ“‰</span>
+                    <h3>They move on. Competitor closed the deal.</h3>
+                    <p style="font-size:.82rem">By morning, the deal is dead â€” you don't even know it.</p>
+                </div>
+                <div class="pain-card fatal rv dl4">
+                    <span class="pain-n">04</span>
+                    <span class="pain-icon">ðŸ’¸</span>
+                    <h3>You lose 60â€“70% of leads this way</h3>
+                    <p style="font-size:.82rem">Every month. Revenue leaking silently while you sleep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ===================== FINAL CTA ===================== -->
-<section id="contact" style="padding:140px clamp(20px,5vw,60px);background:var(--obsidian-3);position:relative;overflow:hidden;">
-  <!-- Gold glow bg -->
-  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(245,166,35,0.1),transparent 70%);pointer-events:none;"></div>
-  <div class="container" style="text-align:center;position:relative;z-index:2;">
-    <span class="section-label">Get Started</span>
-    <span class="gold-rule"></span>
-    <h2 class="reveal" style="font-size:clamp(2.2rem,5vw,4rem);max-width:700px;margin:0 auto 1.5rem;">
-      Your business never sleeps.<br />
-      <span class="gold">Neither does your AI.</span>
-    </h2>
-    <p class="reveal delay-1" style="max-width:480px;margin:0 auto 3rem;font-size:1.05rem;">Join 500+ WhatsApp-first businesses already using Agentic LX to convert leads while they sleep.</p>
-    <div class="reveal delay-2" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://wa.me/919999999999?text=Hi!%20I%27d%20like%20to%20try%20Agentic%20LX" target="_blank" rel="noopener" class="btn btn-gold btn-lg">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Start on WhatsApp
-      </a>
-      <a href="mailto:hello@agenticlx.com" class="btn btn-outline btn-lg">Schedule a Demo</a>
-    </div>
-    <p class="reveal delay-3" style="margin-top:2rem;font-size:0.8rem;opacity:0.4;">14-day free trial · No credit card required · Cancel anytime</p>
-  </div>
-</section>
+    <!-- SOLUTION -->
+    <section id="solution">
+        <div class="wrap">
+            <div class="s-head rv">
+                <span class="label">AI Reception System</span>
+                <span class="rule"></span>
+                <h2>Everything your front desk does,<br />done <span style="color:var(--indigo)">10Ã— better</span></h2>
+                <p style="max-width:460px;margin:.8rem auto 0;font-size:.95rem">Five capabilities that work together so
+                    no lead ever slips through.</p>
+            </div>
+            <div class="sol-grid">
+                <div class="sol-card sol-card--span2 rv dl1">
+                    <span class="sol-icon">âš¡</span>
+                    <h3>Instant 24/7 Response</h3>
+                    <p>Replies to every WhatsApp message in under 3 seconds â€” even at 2 AM on a Sunday. No delays, no
+                        missed opportunities.</p>
+                    <div class="sol-tags"><span class="sol-tag">Auto-reply</span><span
+                            class="sol-tag">Multi-language</span><span class="sol-tag">Contextual Memory</span></div>
+                </div>
+                <div class="sol-card rv dl2">
+                    <span class="sol-icon">ðŸŽ¯</span>
+                    <h3>Smart Lead Qualification</h3>
+                    <p>Asks the right questions, scores leads by intent and budget, routes hot leads instantly.</p>
+                </div>
+                <div class="sol-card rv dl3">
+                    <span class="sol-icon">ðŸ“…</span>
+                    <h3>Appointment Booking</h3>
+                    <p>Integrates with Google Calendar &amp; Calendly â€” books, confirms, and reminds within WhatsApp.
+                    </p>
+                </div>
+                <div class="sol-card rv dl4">
+                    <span class="sol-icon">ðŸ“Š</span>
+                    <h3>CRM &amp; Lead Capture</h3>
+                    <p>Every conversation auto-logged with lead score, intent tags, and full chat history.</p>
+                </div>
+                <div class="sol-card sol-card--span2 rv dl5">
+                    <span class="sol-icon">ðŸ”</span>
+                    <h3>Automated Follow-Up Sequences</h3>
+                    <p>AI sends personalised follow-ups at optimal times â€” brochures, payment links, testimonials â€”
+                        until the deal closes.</p>
+                    <div class="sol-tags"><span class="sol-tag">Drip sequences</span><span class="sol-tag">Payment
+                            links</span><span class="sol-tag">Re-engagement</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ===================== FOOTER ===================== -->
-<footer id="footer" style="background:#07070d;border-top:1px solid rgba(245,166,35,0.1);padding:60px clamp(20px,5vw,60px) 36px;">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;">
-      <div>
-        <a href="#" class="nav-logo" style="margin-bottom:1rem;display:inline-flex;">
-          <span class="nav-logo-mark">AL</span>
-          Agentic&nbsp;<span class="gold">LX</span>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <div class="wrap">
+            <div class="s-head rv">
+                <span class="label">Client Results</span>
+                <span class="rule"></span>
+                <h2>Real businesses,<br /><span style="color:var(--indigo)">real growth</span></h2>
+            </div>
+            <div class="test-grid" style="margin-top:48px">
+                <div class="test-card rv dl1">
+                    <div class="test-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                    <p class="test-quote">"We went from replying to leads the next morning to converting them at
+                        midnight. Agentic LX tripled our show-up rate in 30 days."</p>
+                    <div class="test-who">
+                        <div class="test-av" style="background:linear-gradient(135deg,var(--indigo),#a855f7)">SR</div>
+                        <div>
+                            <div class="test-name">Siddharth Rao</div>
+                            <div class="test-role">Founder, PropEdge Hyderabad</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card rv dl2">
+                    <div class="test-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                    <p class="test-quote">"I was skeptical AI could handle our complex interior design queries. It
+                        handles everything better than our junior staff â€” and never takes a sick day."</p>
+                    <div class="test-who">
+                        <div class="test-av" style="background:linear-gradient(135deg,#10B981,#059669)">PM</div>
+                        <div>
+                            <div class="test-name">Priya Mehta</div>
+                            <div class="test-role">CEO, Studiocraft Interiors</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card rv dl3">
+                    <div class="test-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                    <p class="test-quote">"Setup took 48 hours. ROI was visible in week one. We've qualified over 1,400
+                        leads without touching a single keyboard. This is the future."</p>
+                    <div class="test-who">
+                        <div class="test-av" style="background:linear-gradient(135deg,#3B82F6,var(--indigo))">AK</div>
+                        <div>
+                            <div class="test-name">Arjun Kapoor</div>
+                            <div class="test-role">MD, Kapoor Automobiles Group</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+        <div class="wrap">
+            <div class="s-head rv">
+                <span class="label">The Process</span>
+                <span class="rule"></span>
+                <h2>Up and running in<br /><span style="color:var(--indigo)">48 hours</span></h2>
+                <p style="max-width:400px;margin:.8rem auto 0;font-size:.95rem">No code. No complex integrations. Three
+                    steps and your AI receptionist is live.</p>
+            </div>
+            <div class="how-steps" style="margin-top:56px">
+                <div class="how-step rv dl1">
+                    <div class="how-step-num">01</div>
+                    <div class="how-step-ico">ðŸ”—</div>
+                    <h3>Connect WhatsApp</h3>
+                    <p style="font-size:.82rem">Link your WhatsApp Business number in one click. We handle the API and
+                        WABA onboarding.</p>
+                </div>
+                <div class="how-step rv dl2">
+                    <div class="how-step-num">02</div>
+                    <div class="how-step-ico">ðŸ§ </div>
+                    <h3>Train Your AI</h3>
+                    <p style="font-size:.82rem">Feed it your catalogue, pricing, FAQs, and tone. Our team fine-tunes it
+                        in 24 hours.</p>
+                </div>
+                <div class="how-step rv dl3">
+                    <div class="how-step-num">03</div>
+                    <div class="how-step-ico">ðŸš€</div>
+                    <h3>Go Live &amp; Scale</h3>
+                    <p style="font-size:.82rem">Your AI receptionist handles hundreds of simultaneous conversations
+                        while you close deals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+        <div class="wrap">
+            <div class="s-head rv">
+                <span class="label">Simple Pricing</span>
+                <span class="rule"></span>
+                <h2>Choose your <span style="color:var(--indigo)">growth tier</span></h2>
+                <p style="max-width:400px;margin:.8rem auto 0;font-size:.95rem">All plans include a 14-day free trial.
+                    No credit card required.</p>
+            </div>
+            <div class="price-grid" style="margin-top:52px">
+                <div class="price-card rv dl1">
+                    <div class="price-tier">Starter</div>
+                    <div class="price-amt">â‚¹4,999<sub>/mo</sub></div>
+                    <p class="price-desc">For solo agents and small teams getting started with AI.</p>
+                    <ul class="pf-list">
+                        <li><span>âœ“</span>1 WhatsApp number</li>
+                        <li><span>âœ“</span>Up to 500 conversations/mo</li>
+                        <li><span>âœ“</span>Lead qualification flow</li>
+                        <li><span>âœ“</span>Basic CRM export (CSV)</li>
+                        <li><span>âœ“</span>Email support</li>
+                        <li class="dim"><span>âœ—</span>Calendar booking</li>
+                        <li class="dim"><span>âœ—</span>Custom AI persona</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-ghost" style="width:100%;justify-content:center">Start Free Trial</a>
+                </div>
+                <div class="price-card price-card--feat rv dl2">
+                    <div class="price-badge">Most Popular</div>
+                    <div class="price-tier hi">Growth</div>
+                    <div class="price-amt hi">â‚¹12,999<sub>/mo</sub></div>
+                    <p class="price-desc">For growing businesses automating their entire WhatsApp pipeline.</p>
+                    <ul class="pf-list">
+                        <li><span>âœ“</span>3 WhatsApp numbers</li>
+                        <li><span>âœ“</span>Up to 3,000 conversations/mo</li>
+                        <li><span>âœ“</span>Smart lead scoring</li>
+                        <li><span>âœ“</span>Calendar &amp; appointment sync</li>
+                        <li><span>âœ“</span>CRM integration (HubSpot/Zoho)</li>
+                        <li><span>âœ“</span>Custom AI persona &amp; tone</li>
+                        <li><span>âœ“</span>Priority support (4hr SLA)</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-primary" style="width:100%;justify-content:center">Start Free
+                        Trial</a>
+                </div>
+                <div class="price-card rv dl3">
+                    <div class="price-tier">Scale</div>
+                    <div class="price-amt">Custom</div>
+                    <p class="price-desc">Enterprise-grade AI for large teams, agencies, and high-volume businesses.</p>
+                    <ul class="pf-list">
+                        <li><span>âœ“</span>Unlimited WhatsApp numbers</li>
+                        <li><span>âœ“</span>Unlimited conversations</li>
+                        <li><span>âœ“</span>Multi-brand AI assistants</li>
+                        <li><span>âœ“</span>Full API access</li>
+                        <li><span>âœ“</span>Dedicated success manager</li>
+                        <li><span>âœ“</span>Custom integrations</li>
+                        <li><span>âœ“</span>99.9% SLA guarantee</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-ghost" style="width:100%;justify-content:center">Talk to Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="wrap">
+            <div class="faq-wrap">
+                <div class="s-head rv" style="text-align:left;margin-bottom:36px">
+                    <span class="label">FAQ</span>
+                    <span class="rule" style="margin-left:0"></span>
+                    <h2>Frequently asked<br /><span style="color:var(--indigo)">questions</span></h2>
+                </div>
+                <div class="faq-list rv">
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Do I need a developer to set this up?<span
+                                class="faq-arr">â†“</span></button>
+                        <div class="faq-a">No. Agentic LX is a no-code platform. Our onboarding team guides you through
+                            WhatsApp Business API connection, AI training, and going live â€” no technical knowledge
+                            required.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Will the AI sound robotic or generic?<span
+                                class="faq-arr">â†“</span></button>
+                        <div class="faq-a">Not at all. We train the AI on your products, pricing, brand voice, and FAQ
+                            library. Customers frequently don't realise they're talking to AI â€” until they ask directly.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">What if the AI doesn't know an answer?<span
+                                class="faq-arr">â†“</span></button>
+                        <div class="faq-a">The AI gracefully acknowledges, collects the lead's details, and immediately
+                            notifies your team via SMS, email, or WhatsApp â€” so no lead is ever left unattended.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Is WhatsApp Business API compliant?<span
+                                class="faq-arr">â†“</span></button>
+                        <div class="faq-a">Yes. We're an official Meta Business Partner. All integrations use the
+                            official WhatsApp Business API, fully compliant with Meta's terms and data policies.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Can I hand off to a human mid-conversation?<span
+                                class="faq-arr">â†“</span></button>
+                        <div class="faq-a">Absolutely. Our smart handoff detects high-intent signals and transfers the
+                            conversation to a human agent instantly â€” with full context preserved.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">How long to go live?<span
+                                class="faq-arr">â†“</span></button>
+                        <div class="faq-a">Most clients are live within 48 hours. Our team connects your number, trains
+                            the AI, and runs test conversations before going live.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+        <div class="wrap" style="position:relative;z-index:2">
+            <div class="rv">
+                <span class="label" style="display:block;text-align:center">Get Started</span>
+                <h2
+                    style="font-size:clamp(2rem,4.5vw,3.6rem);max-width:620px;margin:.6rem auto 1.2rem;text-align:center">
+                    Your business never sleeps.<br /><span style="color:var(--indigo)">Neither does your AI.</span></h2>
+                <p style="max-width:440px;margin:0 auto;text-align:center;font-size:.95rem">Join 500+ WhatsApp-first
+                    businesses converting leads around the clock.</p>
+                <div class="cta-actions">
+                    <a href="https://wa.me/919999999999?text=Hi!%20I%27d%20like%20to%20try%20Agentic%20LX"
+                        target="_blank" rel="noopener" class="btn btn-green btn-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Start on WhatsApp
+                    </a>
+                    <a href="mailto:hello@agenticlx.com" class="btn btn-ghost btn-lg">Schedule a Demo</a>
+                </div>
+                <p class="cta-note">14-day free trial Â· No credit card Â· Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="ft-grid">
+            <div class="ft-brand">
+                <div class="ft-logo"><span class="ft-logo-mark">AL</span>Agentic&nbsp;<span
+                        style="color:var(--indigo)">LX</span></div>
+                <p class="ft-desc">AI Reception System for WhatsApp-first businesses. Convert every lead, 24/7,
+                    automatically.</p>
+                <div class="ft-socials">
+                    <a href="#" class="ft-social">ð•</a>
+                    <a href="#" class="ft-social">in</a>
+                    <a href="#" class="ft-social">â–¶</a>
+                </div>
+            </div>
+            <div class="ft-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#solution">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#how">How It Works</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="ft-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#testimonials">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="mailto:hello@agenticlx.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="ft-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">GDPR</a></li>
+                    <li><a href="#">Data Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            <p class="ft-copy">Â© 2026 <span style="color:var(--ink)">Agentic LX</span> â€” Built for businesses that close
+                while they sleep.</p>
+            <div class="ft-status"><span class="ft-status-dot"></span>All systems operational</div>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY -->
+    <div id="mob-bar">
+        <p>DM <span>'AI'</span> on WhatsApp ðŸ‘‡</p>
+        <a href="https://wa.me/919999999999?text=AI" target="_blank" rel="noopener" class="mob-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Open WhatsApp
         </a>
-        <p style="font-size:0.85rem;max-width:280px;margin-top:1rem;line-height:1.7;">AI Reception System for WhatsApp-first businesses. Convert every lead, 24/7, automatically.</p>
-        <div style="display:flex;gap:12px;margin-top:1.5rem;">
-          <a href="#" style="width:36px;height:36px;border-radius:10px;background:var(--glass);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;font-size:0.9rem;transition:all 0.2s;" onmouseenter="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseleave="this.style.borderColor='var(--glass-border)';this.style.color='var(--muted)'">𝕏</a>
-          <a href="#" style="width:36px;height:36px;border-radius:10px;background:var(--glass);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;font-size:0.9rem;transition:all 0.2s;" onmouseenter="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseleave="this.style.borderColor='var(--glass-border)';this.style.color='var(--muted)'">in</a>
-          <a href="#" style="width:36px;height:36px;border-radius:10px;background:var(--glass);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;font-size:0.85rem;transition:all 0.2s;" onmouseenter="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseleave="this.style.borderColor='var(--glass-border)';this.style.color='var(--muted)'">▶</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem;font-family:var(--font-sans);">Product</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="#solution" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Features</a></li>
-          <li><a href="#pricing" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Pricing</a></li>
-          <li><a href="#how" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">How It Works</a></li>
-          <li><a href="#" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Changelog</a></li>
-        </ul>
-      </div>
-      <div>
-        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem;font-family:var(--font-sans);">Company</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="#" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">About Us</a></li>
-          <li><a href="#testimonials" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Case Studies</a></li>
-          <li><a href="#" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Blog</a></li>
-          <li><a href="mailto:hello@agenticlx.com" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem;font-family:var(--font-sans);">Legal</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="#" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Privacy Policy</a></li>
-          <li><a href="#" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Terms of Service</a></li>
-          <li><a href="#" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">GDPR</a></li>
-          <li><a href="#" style="color:var(--muted);text-decoration:none;font-size:0.88rem;font-family:var(--font-sans);transition:color 0.2s;" onmouseenter="this.style.color='var(--white)'" onmouseleave="this.style.color='var(--muted)'">Data Policy</a></li>
-        </ul>
-      </div>
     </div>
-    <!-- Footer bottom -->
-    <div style="border-top:1px solid rgba(255,255,255,0.05);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
-      <p style="font-size:0.8rem;color:var(--muted);">Built for businesses that close while they sleep. &nbsp;© 2026 <span style="color:var(--white);">Agentic LX</span></p>
-      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-        <div style="display:flex;gap:6px;align-items:center;">
-          <div style="width:7px;height:7px;border-radius:50%;background:#25D366;animation:pulse 2s ease infinite;"></div>
-          <span style="font-size:0.75rem;color:var(--muted);font-family:var(--font-sans);">All systems operational</span>
-        </div>
-        <a href="https://wa.me/919999999999?text=Hi%20Agentic%20LX!" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gold),#e8950f);color:#0A0A0F;font-family:var(--font-sans);font-size:0.82rem;font-weight:700;padding:9px 18px;border-radius:100px;text-decoration:none;box-shadow:0 0 20px rgba(245,166,35,0.3);transition:box-shadow 0.2s;" onmouseenter="this.style.boxShadow='0 0 35px rgba(245,166,35,0.55)'" onmouseleave="this.style.boxShadow='0 0 20px rgba(245,166,35,0.3)'">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Chat on WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- ===================== RESPONSIVE FOOTER ===================== -->
-<style>
-  @media (max-width: 768px) {
-    footer .container > div:first-child {
-      grid-template-columns: 1fr 1fr !important;
-    }
-    footer .container > div:first-child > div:first-child {
-      grid-column: span 2;
-    }
-  }
-  @media (max-width: 480px) {
-    footer .container > div:first-child {
-      grid-template-columns: 1fr !important;
-    }
-    footer .container > div:first-child > div:first-child {
-      grid-column: span 1;
-    }
-  }
-</style>
-
-<!-- ===================== STICKY MOBILE BAR ===================== -->
-<div id="mobile-sticky">
-  <p>DM <span>'AI'</span> on WhatsApp 👇</p>
-  <a href="https://wa.me/919999999999?text=AI" target="_blank" rel="noopener" class="mob-wa-btn">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Open WhatsApp
-  </a>
-</div>
-
-<!-- ===================== EXIT BUBBLE ===================== -->
-<div id="exit-bubble">
-  <button class="eb-close" id="ebClose">✕</button>
-  <div class="eb-text">👋 See it live — takes 2 min</div>
-  <a href="https://wa.me/919999999999?text=Hi!%20I%27d%20like%20to%20see%20Agentic%20LX%20live" target="_blank" rel="noopener" class="eb-link">Open demo on WhatsApp →</a>
-</div>
-
-<!-- ===================== JAVASCRIPT ===================== -->
 <script>
-// ---- CUSTOM CURSOR ----
-const dot  = document.getElementById('cursor-dot');
-const ring = document.getElementById('cursor-ring');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-(function animateCursor() {
-  rx += (mx - rx) * 0.14;
-  ry += (my - ry) * 0.14;
-  dot.style.left  = mx + 'px';
-  dot.style.top   = my + 'px';
-  ring.style.left = rx + 'px';
-  ring.style.top  = ry + 'px';
-  requestAnimationFrame(animateCursor);
-})();
-document.querySelectorAll('a,button').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    ring.style.width  = '56px';
-    ring.style.height = '56px';
-    ring.style.borderColor = 'rgba(245,166,35,0.7)';
-    dot.style.transform = 'translate(-50%,-50%) scale(1.8)';
-  });
-  el.addEventListener('mouseleave', () => {
-    ring.style.width  = '36px';
-    ring.style.height = '36px';
-    ring.style.borderColor = 'rgba(245,166,35,0.4)';
-    dot.style.transform = 'translate(-50%,-50%) scale(1)';
-  });
-});
-
-// ---- NAVBAR SCROLL ----
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
-}, { passive: true });
-
-// ---- SCROLL REVEAL ----
-const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('active');
-      revealObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-reveals.forEach(el => revealObserver.observe(el));
-
-// ---- WHATSAPP PHONE MOCKUP ANIMATION ----
-const waStatus = document.getElementById('waStatus');
-
-// Steps: { id, show, typing_before_ms (optional), hide_typing_after_ms (optional) }
-// Timeline (delays from conversation start):
-//  0.6s  → msg 1 (lead)
-//  1.4s  → typing appears
-//  2.9s  → typing hides, msg 2 (AI) appears
-//  3.9s  → msg 3 (lead)
-//  4.7s  → typing appears again
-//  6.2s  → typing hides, msg 4 (AI) appears
-//  7.2s  → msg 5 (lead)
-//  7.9s  → typing appears
-//  9.4s  → typing hides, msg 6 (AI) appears
-// 14.0s  → loop restart
-
-let phoneLoopId = null;
-const phoneTimers = [];
-
-function clearPhoneTimers() {
-  phoneTimers.forEach(t => clearTimeout(t));
-  phoneTimers.length = 0;
-}
-
-function setPhoneStatus(text) {
-  if (waStatus) waStatus.textContent = text;
-}
-
-function showEl(id) {
-  const el = document.getElementById(id);
-  if (el) el.classList.add('show');
-}
-function hideEl(id) {
-  const el = document.getElementById(id);
-  if (el) el.classList.remove('show');
-}
-
-function playPhoneConversation() {
-  // Reset all bubbles
-  ['p1','p2','p3','p4','p5','p6'].forEach(id => hideEl(id));
-  hideEl('pTyping');
-  setPhoneStatus('online');
-
-  function t(ms, fn) {
-    phoneTimers.push(setTimeout(fn, ms));
-  }
-
-  // Msg 1 — lead
-  t(600,  () => showEl('p1'));
-
-  // Typing 1
-  t(1400, () => { showEl('pTyping'); setPhoneStatus('typing...'); });
-  t(2900, () => { hideEl('pTyping'); showEl('p2'); setPhoneStatus('online'); });
-
-  // Msg 3 — lead
-  t(3900, () => showEl('p3'));
-
-  // Typing 2
-  t(4700, () => { showEl('pTyping'); setPhoneStatus('typing...'); });
-  t(6200, () => { hideEl('pTyping'); showEl('p4'); setPhoneStatus('online'); });
-
-  // Msg 5 — lead
-  t(7200, () => showEl('p5'));
-
-  // Typing 3
-  t(7900, () => { showEl('pTyping'); setPhoneStatus('typing...'); });
-  t(9400, () => { hideEl('pTyping'); showEl('p6'); setPhoneStatus('online'); });
-
-  // Loop after 14s
-  phoneLoopId = setTimeout(playPhoneConversation, 14000);
-}
-
-playPhoneConversation();
-
-// ---- FAQ ACCORDION ----
-document.querySelectorAll('.faq-q').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const isOpen = btn.getAttribute('aria-expanded') === 'true';
-    // Close all
-    document.querySelectorAll('.faq-q').forEach(b => {
-      b.setAttribute('aria-expanded', 'false');
-      b.nextElementSibling.classList.remove('open');
+    // CURSOR
+    const cdot = document.getElementById('cdot'), cring = document.getElementById('cring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY });
+    (function loop() { rx += (mx - rx) * .14; ry += (my - ry) * .14; cdot.style.left = mx + 'px'; cdot.style.top = my + 'px'; cring.style.left = rx + 'px'; cring.style.top = ry + 'px'; requestAnimationFrame(loop) })();
+    document.querySelectorAll('a,button').forEach(el => {
+        el.addEventListener('mouseenter', () => { cring.style.width = cring.style.height = '52px'; cring.style.borderColor = 'rgba(99,102,241,.6)'; cdot.style.transform = 'translate(-50%,-50%) scale(1.8)' });
+        el.addEventListener('mouseleave', () => { cring.style.width = cring.style.height = '32px'; cring.style.borderColor = 'rgba(99,102,241,.35)'; cdot.style.transform = 'translate(-50%,-50%) scale(1)' });
     });
-    if (!isOpen) {
-      btn.setAttribute('aria-expanded', 'true');
-      btn.nextElementSibling.classList.add('open');
+
+    // NAV SCROLL
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('sc', scrollY > 60), { passive: true });
+
+    // SCROLL REVEAL
+    const ro = new IntersectionObserver(en => { en.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target) } }) }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.rv').forEach(el => ro.observe(el));
+
+    // MOBILE NAV
+    const hbg = document.getElementById('hbg');
+    let nOpen = false;
+    hbg && hbg.addEventListener('click', () => {
+        nOpen = !nOpen;
+        const nl = document.querySelector('.n-links');
+        if (nOpen) {
+            nl.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(6,6,14,.97);padding:18px var(--pad) 24px;gap:18px;border-bottom:1px solid rgba(99,102,241,.15);backdrop-filter:blur(18px)';
+            hbg.children[0].style.transform = 'rotate(45deg) translateY(9px)';
+            hbg.children[1].style.opacity = '0';
+            hbg.children[2].style.transform = 'rotate(-45deg) translateY(-9px)';
+        } else {
+            nl.style.cssText = '';
+            hbg.children[0].style.transform = '';
+            hbg.children[1].style.opacity = '';
+            hbg.children[2].style.transform = '';
+        }
+    });
+
+    // SMOOTH ANCHOR + close nav
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const t = document.querySelector(a.getAttribute('href'));
+            if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); if (nOpen) { hbg.click() } }
+        });
+    });
+
+    // ANNOUNCE BAR
+    const abX = document.getElementById('abX'), abar = document.getElementById('abar');
+    abX && abX.addEventListener('click', () => { abar.style.display = 'none'; document.body.classList.remove('bv'); navbar.style.top = '0' });
+
+    // WHATSAPP ANIMATION
+    const waStatus = document.getElementById('waStatus');
+    const pt = [];
+    function clrPt() { pt.forEach(clearTimeout); pt.length = 0 }
+    function se(id) { const e = document.getElementById(id); if (e) e.classList.add('show') }
+    function he(id) { const e = document.getElementById(id); if (e) e.classList.remove('show') }
+    function play() {
+        ['p1', 'p2', 'p3', 'p4', 'p5', 'p6'].forEach(id => he(id)); he('pTyping');
+        if (waStatus) waStatus.textContent = 'online';
+        const t = (ms, fn) => pt.push(setTimeout(fn, ms));
+        t(600, () => se('p1'));
+        t(1400, () => { se('pTyping'); if (waStatus) waStatus.textContent = 'typing...' });
+        t(2900, () => { he('pTyping'); se('p2'); if (waStatus) waStatus.textContent = 'online' });
+        t(3900, () => se('p3'));
+        t(4700, () => { se('pTyping'); if (waStatus) waStatus.textContent = 'typing...' });
+        t(6200, () => { he('pTyping'); se('p4'); if (waStatus) waStatus.textContent = 'online' });
+        t(7200, () => se('p5'));
+        t(7900, () => { se('pTyping'); if (waStatus) waStatus.textContent = 'typing...' });
+        t(9400, () => { he('pTyping'); se('p6'); if (waStatus) waStatus.textContent = 'online' });
+        pt.push(setTimeout(play, 14000));
     }
-  });
-});
+    play();
 
-// ---- MOBILE NAV ----
-const hamburger = document.getElementById('hamburger');
-let navOpen = false;
-hamburger && hamburger.addEventListener('click', () => {
-  navOpen = !navOpen;
-  const links = document.querySelector('.nav-links');
-  if (navOpen) {
-    links.style.display = 'flex';
-    links.style.flexDirection = 'column';
-    links.style.position = 'absolute';
-    links.style.top = '100%';
-    links.style.left = '0';
-    links.style.right = '0';
-    links.style.background = 'rgba(10,10,15,0.97)';
-    links.style.padding = '20px 40px 30px';
-    links.style.gap = '20px';
-    links.style.borderBottom = '1px solid rgba(245,166,35,0.1)';
-    links.style.backdropFilter = 'blur(20px)';
-  } else {
-    links.style.display = '';
-    links.style.position = '';
-  }
-});
+    // FAQ
+    document.querySelectorAll('.faq-q').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const open = btn.getAttribute('aria-expanded') === 'true';
+            document.querySelectorAll('.faq-q').forEach(b => { b.setAttribute('aria-expanded', 'false'); b.nextElementSibling.classList.remove('open') });
+            if (!open) { btn.setAttribute('aria-expanded', 'true'); btn.nextElementSibling.classList.add('open') }
+        });
+    });
 
-// ---- SMOOTH ANCHOR ----
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // STAT COUNTERS
+    function animCtr(el) {
+        const from = parseFloat(el.dataset.from) || 0, to = parseFloat(el.dataset.to), suf = el.dataset.suffix || '', isF = String(to).includes('.');
+        const dur = 1800, st = performance.now();
+        (function tick(now) { const p = Math.min((now - st) / dur, 1), e = 1 - Math.pow(1 - p, 3), v = from + (to - from) * e; el.textContent = (isF ? v.toFixed(1) : Math.round(v)) + suf; if (p < 1) requestAnimationFrame(tick) })(performance.now());
     }
-  });
-});
-
-// ---- ANNOUNCEMENT BAR CLOSE ----
-const abClose = document.getElementById('abClose');
-const announceBar = document.getElementById('announce-bar');
-abClose && abClose.addEventListener('click', () => {
-  announceBar.style.display = 'none';
-  document.body.classList.remove('bar-visible');
-  document.getElementById('navbar').style.top = '0';
-});
-
-// ---- ANIMATED STAT COUNTERS ----
-function animateCounter(el) {
-  const from   = parseFloat(el.dataset.from)  || 0;
-  const to     = parseFloat(el.dataset.to);
-  const suffix = el.dataset.suffix || '';
-  const prefix = el.dataset.prefix || '';
-  const isFloat = String(to).includes('.');
-  const duration = 1800;
-  const start = performance.now();
-  function tick(now) {
-    const pct = Math.min((now - start) / duration, 1);
-    const ease = 1 - Math.pow(1 - pct, 3); // easeOutCubic
-    const val = from + (to - from) * ease;
-    el.textContent = prefix + (isFloat ? val.toFixed(1) : Math.round(val)) + suffix;
-    if (pct < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-}
-const counterObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      animateCounter(e.target);
-      counterObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
-
-// ---- EXIT BUBBLE (show after 12s) ----
-const exitBubble = document.getElementById('exit-bubble');
-const ebClose    = document.getElementById('ebClose');
-let exitShown = false;
-setTimeout(() => {
-  if (!exitShown && exitBubble) { exitBubble.classList.add('visible'); exitShown = true; }
-}, 12000);
-ebClose && ebClose.addEventListener('click', () => exitBubble.classList.remove('visible'));
+    const co = new IntersectionObserver(en => { en.forEach(e => { if (e.isIntersecting) { animCtr(e.target); co.unobserve(e.target) } }) }, { threshold: .5 });
+    document.querySelectorAll('.counter').forEach(el => co.observe(el));
 </script>
-
 </body>
+
 </html>
